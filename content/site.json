@@ -78,7 +78,7 @@
    "lang_label": "Lingua",
    "hero_kicker": "Associazione studentesca dell'Università Bocconi",
    "hero_title": "Studenti liberali in Bocconi, dal 2008",
-   "hero_text": "Scriviamo di economia e politica e ne discutiamo con chiunque ne abbia voglia. Il nome viene da Milton Friedman, ma tra noi trovi liberali di ogni tipo.",
+   "hero_text": "Scriviamo di economia e politica e ne discutiamo con chiunque ne abbia voglia.",
    "hero_cta1": "Leggi gli articoli",
    "hero_cta2": "Chi siamo",
    "featured": "Articoli",
@@ -94,19 +94,19 @@
    "what": [
     {
      "t": "Articoli",
-     "d": "I membri scrivono commenti e analisi su economia, politica e attualità internazionale. Li pubblichiamo qui, in italiano e in inglese."
+     "d": "Analisi e commenti dei nostri membri su economia, politica e attualità."
     },
     {
      "t": "Eventi",
-     "d": "Almeno una volta al mese portiamo in Bocconi un ospite. Gli incontri sono aperti a tutti gli studenti."
+     "d": "Incontri e dibattiti in Bocconi con ospiti dal mondo dell'economia e della politica."
     },
     {
      "t": "Newsletter",
-     "d": "The Friedman Letter, la nostra newsletter gratuita: economia, politica e i nuovi articoli dell'associazione nella tua casella email."
+     "d": "The Friedman Letter: le notizie e gli articoli più interessanti, nella tua casella email."
     },
     {
      "t": "Social",
-     "d": "Su Instagram e LinkedIn annunciamo gli incontri e raccontiamo com'è andata."
+     "d": "Su Instagram e LinkedIn annunciamo gli incontri e raccontiamo cosa facciamo."
     }
    ],
    "events_kicker": "Eventi",
@@ -171,11 +171,11 @@
     "Ci accomuna l'idea che lo Stato debba fare poche cose e farle bene, e che su tutto il resto debbano decidere le persone."
    ],
    "topbar": "Università Bocconi · Milano",
-   "nav_compass": "Bussola",
+   "nav_compass": "Political Compass",
    "lang_menu": "Lingua del sito",
    "lang_it": "Italiano",
    "lang_en": "English",
-   "compass_kicker": "Bussola politica",
+   "compass_kicker": "Political Compass",
    "compass_title": "Dove ti collochi?",
    "compass_intro": "Dodici affermazioni, meno di due minuti. Alla fine vedi dove cadi tra Stato e mercato, tra autorità e libertà, e quale pensatore ti somiglia di più.",
    "compass_start": "Inizia il test",
@@ -201,7 +201,7 @@
    "compass_closest": "Il pensatore più vicino a te",
    "compass_books": "Da leggere",
    "compass_share": "Condividi il risultato",
-   "compass_share_text": "Alla bussola politica SBL sono risultato",
+   "compass_share_text": "Al Political Compass di SBL sono risultato",
    "compass_retry": "Rifai il test",
    "compass_teaser_title": "Dove ti collochi? Fai il test",
    "compass_teaser_text": "Dodici domande per scoprire dove ti collochi tra Stato e mercato, autorità e libertà.",
@@ -234,7 +234,7 @@
    "lang_label": "Language",
    "hero_kicker": "Student association at Bocconi University",
    "hero_title": "Liberal students at Bocconi, since 2008",
-   "hero_text": "We write about economics and politics, and argue about them with anyone who wants to join in. The name comes from Milton Friedman, but you'll find every kind of liberal among us.",
+   "hero_text": "We write about economics and politics, and argue about them with anyone who wants to join in.",
    "hero_cta1": "Read our articles",
    "hero_cta2": "About us",
    "featured": "Articles",
@@ -250,19 +250,19 @@
    "what": [
     {
      "t": "Articles",
-     "d": "Members write commentary and analysis on economics, politics and world affairs. We publish them here, in English and Italian."
+     "d": "Analysis and commentary by our members on economics, politics and current affairs."
     },
     {
      "t": "Events",
-     "d": "At least once a month we bring a guest to Bocconi. Talks are open to all students."
+     "d": "Talks and debates at Bocconi with guests from the worlds of economics and politics."
     },
     {
      "t": "Newsletter",
-     "d": "The Friedman Letter, our free newsletter: economics, politics and the association's new articles in your inbox."
+     "d": "The Friedman Letter: the most interesting news and articles, straight to your inbox."
     },
     {
      "t": "Social media",
-     "d": "We announce our talks on Instagram and LinkedIn, and post how they went."
+     "d": "On Instagram and LinkedIn we announce our talks and share what we're up to."
     }
    ],
    "events_kicker": "Events",
