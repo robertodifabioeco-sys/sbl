@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block main %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">{{ t.credits_link }}</p>
+    <h1>{{ t.credits_title }}</h1>
+    <p>{{ t.credits_intro }}</p>
+  </div>
+</header>
+<section class="section">
+  <div class="wrap" style="max-width: 900px">
+    <ul class="credits-list">
+      {% for th in thinkers %}
+      <li><img src="/img/thinkers/{{ th.id }}.jpg" alt="" loading="lazy"><span><strong>{{ th.name }}</strong> — {{ th.author_clean or ('autore sconosciuto' if lang == 'it' else 'unknown author') }} · {{ th.license }} · <a href="{{ th.source }}" target="_blank" rel="noopener">Wikimedia Commons</a></span></li>
+      {% endfor %}
+      <li><img src="/img/site/reagan-friedman-1988.jpg" alt="" loading="lazy"><span><strong>Ronald Reagan, Milton Friedman (1988)</strong> — {{ 'Casa Bianca, pubblico dominio' if lang == 'it' else 'The White House, public domain' }}</span></li>
+    </ul>
+    <p style="margin-top: 32px; color: var(--ink-2)">{{ t.credits_articles }}</p>
+    <p style="color: var(--ink-2)">{{ 'Caratteri: Source Serif 4 e Inter (SIL Open Font License). Icone: Simple Icons (CC0).' if lang == 'it' else 'Typefaces: Source Serif 4 and Inter (SIL Open Font License). Icons: Simple Icons (CC0).' }}</p>
+  </div>
+</section>
+{% endblock %}

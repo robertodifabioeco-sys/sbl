@@ -1,0 +1,32 @@
+{
+ "slug": "what-should-central-banks-peg-arguments-for-the-money-supply",
+ "orig_lang": "en",
+ "author": "Renato Lembe Agurto",
+ "drop_blocks": [
+  0
+ ],
+ "category": "economics-finance",
+ "dek": {
+  "it": "Partendo da Friedman e da Sargent e Wallace, l’articolo spiega perché fissare un obiettivo sui tassi d’interesse non basterebbe a controllare i prezzi e perché la teoria guardava all’offerta di moneta.",
+  "en": "Drawing on Friedman and on Sargent and Wallace, the article explains why pegging interest rates was held unable to control prices, and why theory pointed instead to the money supply."
+ },
+ "title_tr": "Che cosa dovrebbero ancorare le banche centrali? Argomenti a favore dell’offerta di moneta",
+ "blocks_tr": [
+  null,
+  null,
+  "Oltre a essere uno degli economisti più brillanti del Novecento, Milton Friedman era anche un eccellente comunicatore, capito tanto dagli specialisti della materia quanto dai profani che lo guardavano in televisione. Il suo discorso era così chiaro che ancora oggi l’intuizione comune sulla politica monetaria si basa sulla sua tesi principale: l’inflazione è causata da un aumento della quantità di moneta offerta dal governo. Le autorità hanno la colpa di tassare il potere d’acquisto dei poveri stampando troppa moneta.",
+  "Nella comunità degli economisti, tuttavia, questa affermazione mirava a qualcosa di più che fornire al pubblico strumenti per giudicare politici o burocrati: il suo scopo, infatti, era confutare una volta per tutte la convinzione che i banchieri centrali potessero fissare sistematicamente un obiettivo sui tassi d’interesse in modo da tenere sotto controllo il livello dei prezzi.",
+  "Immaginiamo che le autorità abbassino deliberatamente i tassi d’interesse acquistando titoli dalle banche private. Le loro riserve infruttifere aumenterebbero e la maggior parte finirebbe per essere prestata ai clienti delle banche (un’espansione dell’offerta di moneta). Più credito significa più spesa privata, in beni capitali o in beni di consumo, e quindi redditi più alti per produttori e lavoratori.",
+  "Il risultato, alla fine, sarebbe un aumento della domanda di prestiti <em>a parità di tasso d’interesse</em>, perché la maggiore spesa spinge in alto il livello dei prezzi e costringe famiglie e imprese a detenere più liquidità per soddisfare la loro consueta domanda di beni. Con redditi più alti, inoltre, famiglie e imprese potrebbero permettersi di chiedere più prestiti allo stesso costo. Le banche private, con risorse creditizie limitate, dovrebbero allora aumentare lo spread bancario oppure vendere più titoli al governo. La prima opzione è sconsigliabile in un contesto di mercato, perché significa perdere clienti a favore dei concorrenti.",
+  "La maggior parte delle banche sceglierebbe quindi la seconda opzione, il cui effetto principale è la diminuzione del prezzo dei titoli e, di conseguenza, l’aumento dei tassi d’interesse. Secondo Friedman, questi tornerebbero al livello iniziale nel giro di uno o due anni. Qualsiasi tentativo del governo di contrastare questa tendenza richiederebbe acquisti di titoli più consistenti dei precedenti, il che significa un tasso di crescita dell’offerta di moneta sempre più alto nel tempo e, di conseguenza, un’inflazione esplosiva nel medio periodo.",
+  "Oltre a non riuscire a stabilizzare il livello dei prezzi, l’ancoraggio dei tassi d’interesse è anche un indicatore ambiguo della politica monetaria: poiché la stessa decisione spinge i tassi in direzioni opposte nel breve periodo, né gli analisti né le autorità sono in grado di riconoscere un chiaro nesso di causa-effetto tra acquisto di titoli e tasso d’interesse in un dato periodo. In pratica, un rialzo dei tassi non può essere attribuito unicamente né a una politica monetaria più restrittiva né a una più espansiva, perché è l’effetto di entrambe, in momenti diversi del <em>breve periodo</em>.",
+  "A metà degli anni Settanta la politica di obiettivo sui tassi d’interesse fu di nuovo duramente attaccata da Thomas Sargent e Neil Wallace: ancorare il tasso d’interesse non sarebbe stato inutile solo in quel momento, come sosteneva Friedman, ma inutile <em>sempre</em>.",
+  "Aggiungiamo due elementi allo scenario precedente. Immaginiamo, innanzitutto, che gli imprenditori fissino i prezzi correnti in base alle loro aspettative sui prezzi futuri. Inoltre, le banche private credono che il governo sia determinato ad ancorare il tasso d’interesse a un livello preciso. Crederlo significa, in altre parole, presumere che le autorità acquisteranno sempre i titoli delle banche o concederanno loro prestiti al tasso obiettivo, pur di mantenerlo.",
+  "Se così fosse, le banche private non avrebbero <em>alcun vincolo di liquidità</em> e selezionerebbero i prestiti solo in base all’analisi del rischio di insolvenza, sapendo che le autorità le rifornirebbero sempre di liquidità sufficiente. Gli imprenditori, dal canto loro, presumerebbero un comportamento analogo da parte delle banche private: la loro domanda di prestiti verrebbe sempre soddisfatta, purché dimostrino che la loro attività è redditizia.",
+  "L’offerta di moneta sarebbe allora quasi infinita nel breve periodo, e non ci sarebbero limiti monetari alle aspettative di prezzo degli imprenditori. Ogni aspettativa sul livello futuro dei prezzi è coerente con un livello di <em>equilibrio </em>che eguaglia offerta e domanda di moneta, senza innescare fattori di compensazione. A loro volta, anche i prezzi correnti possono assumere qualsiasi livello e sono quindi <em>indeterminati</em>. In altre parole, le autorità sono <em>del tutto incapaci</em> di influenzare i prezzi, che sono determinati soltanto da arbitrarie aspettative private.",
+  "Dopo argomenti così forti contro l’ancoraggio dei tassi d’interesse, viene da chiedersi: perché allora le banche centrali di oggi fissano un obiettivo sui tassi? Perché il livello dei prezzi, per quanto stabile possa essere, sembra controllato dalle autorità monetarie? È il tema del mio prossimo articolo.",
+  "<em>BIBLIOGRAFIA</em>",
+  "FRIEDMAN, M. The Role of Monetary Policy. <em>The American Economic Review</em>, Washington, v. 58, n. 1, p. 1-17, mar. 1968.",
+  "SARGENT, T. J.; WALLACE, N. “Rational” Expectations, the Optimal Monetary Instrument, and the Optimal Money Supply Rate. <em>The Journal of Political Economy</em>, Chicago, v. 83, n. 2, p. 241-254, abr. 1975."
+ ]
+}

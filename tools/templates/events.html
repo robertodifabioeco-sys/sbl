@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block main %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">{{ t.nav_events }}</p>
+    <h1>{{ t.events_page_title }}</h1>
+    <p>{{ t.events_page_intro }}</p>
+  </div>
+  <div class="tiles" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+<section class="section" style="padding-bottom: 0">
+  <div class="wrap">
+    <div class="feature" style="background: var(--navy); border-color: var(--navy)">
+      <div class="body" style="color:#fff">
+        <p class="kicker light">{{ t.events_next_title }}</p>
+        <h3 style="color:#fff">{{ 'Anno accademico 2026/27' if lang == 'it' else 'Academic year 2026/27' }}</h3>
+        <p style="color: rgba(255,255,255,.8)">{{ t.events_next_text }}</p>
+        <div><a class="btn btn-red" href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram →</a></div>
+      </div>
+      <div class="thumb"><img src="/img/events/{{ events[0].img }}" alt="{{ events[0].title[lang] }}" width="845" height="988" style="object-position: center 35%"></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">{{ 'Archivio' if lang == 'it' else 'Archive' }}</p><h2>{{ 'Gli incontri degli ultimi anni' if lang == 'it' else 'Recent events' }}</h2></div></div>
+    <div class="gallery">
+      {% for e in events %}
+      <figure class="reveal"><img src="/img/events/{{ e.img }}" alt="{{ e.title[lang] }}" loading="lazy"><figcaption>{{ e.title[lang] }}<small>{{ e.desc[lang] }}</small></figcaption></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

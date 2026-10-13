@@ -1,0 +1,270 @@
+{
+ "scale": [
+  {
+   "v": 2,
+   "it": "Molto d'accordo",
+   "en": "Strongly agree"
+  },
+  {
+   "v": 1,
+   "it": "D'accordo",
+   "en": "Agree"
+  },
+  {
+   "v": 0,
+   "it": "Non saprei",
+   "en": "Not sure"
+  },
+  {
+   "v": -1,
+   "it": "In disaccordo",
+   "en": "Disagree"
+  },
+  {
+   "v": -2,
+   "it": "Per niente d'accordo",
+   "en": "Strongly disagree"
+  }
+ ],
+ "questions": [
+  {
+   "axis": "x",
+   "sign": 1,
+   "it": "Lo Stato dovrebbe vendere le aziende pubbliche che non offrono servizi essenziali.",
+   "en": "The State should sell off state-owned companies that don't provide essential services."
+  },
+  {
+   "axis": "y",
+   "sign": 1,
+   "it": "La cannabis dovrebbe essere legale e venduta come l'alcol.",
+   "en": "Cannabis should be legal and sold like alcohol."
+  },
+  {
+   "axis": "x",
+   "sign": -1,
+   "it": "Serve un salario minimo fissato per legge.",
+   "en": "We need a minimum wage set by law."
+  },
+  {
+   "axis": "y",
+   "sign": -1,
+   "it": "Per la sicurezza è accettabile che lo Stato controlli le comunicazioni online dei cittadini.",
+   "en": "For the sake of security, it's acceptable for the State to monitor citizens' online communications."
+  },
+  {
+   "axis": "x",
+   "sign": 1,
+   "it": "Meglio tasse più basse, anche se vuol dire meno servizi pubblici.",
+   "en": "Lower taxes are better, even if it means fewer public services."
+  },
+  {
+   "axis": "y",
+   "sign": 1,
+   "it": "Le coppie dello stesso sesso dovrebbero potersi sposare, con gli stessi diritti di tutti.",
+   "en": "Same-sex couples should be able to marry, with the same rights as everyone else."
+  },
+  {
+   "axis": "x",
+   "sign": -1,
+   "it": "In una crisi economica lo Stato deve spendere di più per sostenere la domanda.",
+   "en": "In an economic crisis the State should spend more to support demand."
+  },
+  {
+   "axis": "y",
+   "sign": -1,
+   "it": "Le opinioni offensive dovrebbero essere vietate per legge.",
+   "en": "Offensive opinions should be banned by law."
+  },
+  {
+   "axis": "x",
+   "sign": 1,
+   "it": "Scuole e ospedali privati dovrebbero poter competere con quelli pubblici, anche ricevendo fondi pubblici tramite voucher.",
+   "en": "Private schools and hospitals should be able to compete with public ones, including through publicly funded vouchers."
+  },
+  {
+   "axis": "y",
+   "sign": 1,
+   "it": "Ogni adulto dovrebbe poter decidere della propria fine vita, eutanasia compresa.",
+   "en": "Every adult should be free to make end-of-life decisions, including euthanasia."
+  },
+  {
+   "axis": "x",
+   "sign": -1,
+   "it": "I dazi sono uno strumento giusto per proteggere le imprese italiane ed europee.",
+   "en": "Tariffs are a fair way to protect Italian and European businesses."
+  },
+  {
+   "axis": "y",
+   "sign": -1,
+   "it": "Lo Stato dovrebbe promuovere e difendere i valori tradizionali del Paese.",
+   "en": "The State should promote and defend the country's traditional values."
+  }
+ ],
+ "profiles": {
+  "libertarian": {
+   "thinker": "mises",
+   "name": {
+    "it": "Libertario",
+    "en": "Libertarian"
+   },
+   "text": {
+    "it": "Vuoi uno Stato ridotto al minimo, in economia come nella vita privata. Per te mercato e libertà personale sono la stessa battaglia.",
+    "en": "You want a minimal State, in the economy and in private life. For you, free markets and personal freedom are the same fight."
+   },
+   "books": [
+    {
+     "t": {
+      "it": "Human Action",
+      "en": "Human Action"
+     },
+     "a": "Ludwig von Mises"
+    },
+    {
+     "t": {
+      "it": "Ciò che si vede e ciò che non si vede",
+      "en": "That Which Is Seen, and That Which Is Not Seen"
+     },
+     "a": "Frédéric Bastiat"
+    }
+   ]
+  },
+  "classical": {
+   "thinker": "friedman",
+   "name": {
+    "it": "Liberale classico",
+    "en": "Classical liberal"
+   },
+   "text": {
+    "it": "Ti fidi del mercato e della libertà individuale, ma riconosci allo Stato qualche compito preciso. Sei dalle parti di Milton Friedman.",
+    "en": "You trust markets and individual freedom, but you accept that the State has a few specific jobs. You're close to Milton Friedman."
+   },
+   "books": [
+    {
+     "t": {
+      "it": "Capitalism and Freedom",
+      "en": "Capitalism and Freedom"
+     },
+     "a": "Milton Friedman"
+    },
+    {
+     "t": {
+      "it": "The Road to Serfdom",
+      "en": "The Road to Serfdom"
+     },
+     "a": "Friedrich A. von Hayek"
+    }
+   ]
+  },
+  "conservative": {
+   "thinker": "thatcher",
+   "name": {
+    "it": "Conservatore liberista",
+    "en": "Free-market conservative"
+   },
+   "text": {
+    "it": "In economia vuoi meno Stato, ma su sicurezza, ordine e valori pensi che un'autorità forte serva. È la linea di Thatcher e Reagan.",
+    "en": "In economics you want less State, but on security, order and values you think strong authority is needed. It's the Thatcher and Reagan line."
+   },
+   "books": [
+    {
+     "t": {
+      "it": "The Downing Street Years",
+      "en": "The Downing Street Years"
+     },
+     "a": "Margaret Thatcher"
+    },
+    {
+     "t": {
+      "it": "La democrazia in America",
+      "en": "Democracy in America"
+     },
+     "a": "Alexis de Tocqueville"
+    }
+   ]
+  },
+  "progressive": {
+   "thinker": "popper",
+   "name": {
+    "it": "Liberale progressista",
+    "en": "Progressive liberal"
+   },
+   "text": {
+    "it": "Sui diritti civili sei dalla parte della libertà, in economia chiedi allo Stato di intervenire di più. Con noi andresti d'accordo a metà, e se ne discuterebbe volentieri.",
+    "en": "On civil rights you side with freedom, while in economics you want the State to do more. You'd agree with us halfway, and we'd be glad to argue about the rest."
+   },
+   "books": [
+    {
+     "t": {
+      "it": "La società aperta e i suoi nemici",
+      "en": "The Open Society and Its Enemies"
+     },
+     "a": "Karl Popper"
+    },
+    {
+     "t": {
+      "it": "Prediche inutili",
+      "en": "Prediche inutili"
+     },
+     "a": "Luigi Einaudi"
+    }
+   ]
+  },
+  "statist": {
+   "thinker": "bastiat",
+   "name": {
+    "it": "Statalista",
+    "en": "Statist"
+   },
+   "text": {
+    "it": "Ti fidi più dello Stato che del mercato, e più dell'autorità che della scelta individuale. Siamo lontani, ma vieni a un nostro incontro: le idee si mettono alla prova discutendo.",
+    "en": "You trust the State more than markets, and authority more than individual choice. We're far apart, but come to one of our talks: ideas get tested by arguing."
+   },
+   "books": [
+    {
+     "t": {
+      "it": "Ciò che si vede e ciò che non si vede",
+      "en": "That Which Is Seen, and That Which Is Not Seen"
+     },
+     "a": "Frédéric Bastiat"
+    },
+    {
+     "t": {
+      "it": "Free to Choose",
+      "en": "Free to Choose"
+     },
+     "a": {
+      "it": "Milton e Rose Friedman",
+      "en": "Milton and Rose Friedman"
+     }
+    }
+   ]
+  },
+  "centrist": {
+   "thinker": "tocqueville",
+   "name": {
+    "it": "Moderato",
+    "en": "Moderate"
+   },
+   "text": {
+    "it": "Non ti schieri sugli estremi: valuti caso per caso quanto Stato e quanta libertà servano. È un buon punto di partenza per leggere i classici.",
+    "en": "You stay away from the extremes and weigh, case by case, how much State and how much freedom is needed. It's a good starting point for reading the classics."
+   },
+   "books": [
+    {
+     "t": {
+      "it": "La democrazia in America",
+      "en": "Democracy in America"
+     },
+     "a": "Alexis de Tocqueville"
+    },
+    {
+     "t": {
+      "it": "Prediche inutili",
+      "en": "Prediche inutili"
+     },
+     "a": "Luigi Einaudi"
+    }
+   ]
+  }
+ }
+}

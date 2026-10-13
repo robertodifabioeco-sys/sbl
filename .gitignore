@@ -1,0 +1,5 @@
+dist/
+dist-preview/
+build-cache/
+__pycache__/
+*.pyc

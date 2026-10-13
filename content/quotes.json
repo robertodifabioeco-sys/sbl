@@ -1,0 +1,62 @@
+[
+ {
+  "who": "friedman",
+  "name": "Milton Friedman",
+  "en": "There's no such thing as a free lunch.",
+  "it": "Non esistono pasti gratis.",
+  "src": {
+   "it": "Titolo di un suo libro del 1975",
+   "en": "Title of his 1975 book"
+  }
+ },
+ {
+  "who": "friedman",
+  "name": "Milton Friedman",
+  "en": "One of the great mistakes is to judge policies and programs by their intentions rather than their results.",
+  "it": "Uno dei grandi errori è giudicare politiche e programmi dalle intenzioni invece che dai risultati.",
+  "src": {
+   "it": "Intervista a The Open Mind, 1975",
+   "en": "Interview on The Open Mind, 1975"
+  }
+ },
+ {
+  "who": "smith",
+  "name": "Adam Smith",
+  "en": "Little else is requisite to carry a state to the highest degree of opulence from the lowest barbarism, but peace, easy taxes, and a tolerable administration of justice.",
+  "it": "Per portare uno Stato dalla barbarie più profonda alla massima prosperità non serve molto altro: pace, tasse leggere e una giustizia amministrata in modo accettabile.",
+  "src": {
+   "it": "Lezione del 1755, riportata da Dugald Stewart",
+   "en": "1755 lecture, reported by Dugald Stewart"
+  }
+ },
+ {
+  "who": "friedman",
+  "name": "Milton Friedman",
+  "en": "Inflation is always and everywhere a monetary phenomenon.",
+  "it": "L'inflazione è sempre e ovunque un fenomeno monetario.",
+  "src": {
+   "it": "Inflation: Causes and Consequences, 1963",
+   "en": "Inflation: Causes and Consequences, 1963"
+  }
+ },
+ {
+  "who": "hayek",
+  "name": "Friedrich A. von Hayek",
+  "en": "The more the state \"plans\" the more difficult planning becomes for the individual.",
+  "it": "Più lo Stato «pianifica», più diventa difficile per il singolo fare i propri piani.",
+  "src": {
+   "it": "The Road to Serfdom, 1944",
+   "en": "The Road to Serfdom, 1944"
+  }
+ },
+ {
+  "who": "friedman",
+  "name": "Milton Friedman",
+  "en": "The great advances of civilization, whether in architecture or painting, in science or literature, in industry or agriculture, have never come from centralized government.",
+  "it": "I grandi progressi della civiltà, nell'architettura come nella pittura, nella scienza come nella letteratura, nell'industria come nell'agricoltura, non sono mai venuti da un governo centralizzato.",
+  "src": {
+   "it": "Capitalism and Freedom, 1962",
+   "en": "Capitalism and Freedom, 1962"
+  }
+ }
+]

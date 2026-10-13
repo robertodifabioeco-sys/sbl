@@ -1,0 +1,31 @@
+{
+ "slug": "the-underestimated-perils-of-short-selling-bans",
+ "orig_lang": "en",
+ "author": "Paolo Taveggia",
+ "drop_blocks": [
+  0
+ ],
+ "category": "economics-finance",
+ "dek": {
+  "it": "Durante la crisi del Coronavirus diversi regolatori europei hanno vietato le vendite allo scoperto. Le esperienze del 2008 e della crisi del debito sovrano suggeriscono che i costi superino i benefici.",
+  "en": "During the Coronavirus crisis several European regulators banned short selling. The experience of 2008 and the sovereign debt crisis suggests the costs outweigh the benefits."
+ },
+ "title_tr": "I rischi sottovalutati dei divieti di vendita allo scoperto",
+ "blocks_tr": [
+  null,
+  "Negli ultimi giorni Belgio, Francia, Italia, Spagna e altri Paesi europei hanno deciso di adottare misure incisive per attenuare l’incertezza e la speculazione sui mercati scossi dall’epidemia di Coronavirus. I regolatori nazionali hanno introdotto divieti temporanei di vendita allo scoperto su un’ampia selezione di titoli quotati. In Francia l’AMF ha vietato le vendite allo scoperto su 92 titoli, in Italia la Consob ha sospeso queste operazioni per 20 titoli, mentre la Spagna ha esteso il divieto per il mese successivo a tutte le azioni spagnole.",
+  "Con <em>vendita allo scoperto</em> si intende la controversa strategia di trading che consiste nel prendere in prestito azioni e venderle sul mercato, con l’obiettivo di riacquistarle più tardi a prezzi inferiori, guadagnando dal deprezzamento dei titoli. La pratica è considerata piuttosto rischiosa, perché può fruttare grandi profitti ma anche accumulare perdite enormi.",
+  "Esperti finanziari e accademici sembrano divisi sull’efficacia di questi divieti: alcuni li sostengono, altri sono del tutto contrari. La maggior parte degli articoli di ricerca e degli studi accademici mostra che limitare in questo modo le contrattazioni non è efficace e che, in alcuni casi, potrebbe persino aumentare la volatilità e la probabilità di default dei titoli interessati.",
+  "Il primo gruppo tende a favorire <strong>restrizioni temporanee</strong> imposte dalle autorità di vigilanza nazionali nei momenti di tensione, quando le vendite allo scoperto predatorie possono destabilizzare le istituzioni finanziarie. La ricerca di Brunnermeier e Oehmke (2008) mostra che le vendite allo scoperto sono benefiche solo «in tempi normali», perché forniscono liquidità e prevengono bolle o sopravvalutazioni. In fasi di stress, invece, possono emergere vendite allo scoperto <em>predatorie</em>, perché le istituzioni finanziarie sono soggette a vincoli di leva imposti dai depositanti non assicurati e dai creditori a breve termine, che ne indeboliscono la posizione finanziaria e di liquidità. Di conseguenza, vendite allo scoperto aggressive possono costringere l’istituzione a liquidare attività a lungo termine a prezzi di svendita, destabilizzando il mercato.",
+  "Il secondo gruppo sostiene che i divieti di vendita allo scoperto non siano efficienti. Molti studi accademici mostrano che le restrizioni alle contrattazioni non giovano alla stabilità del mercato. Per esempio, Beber e Pagano (2013) hanno rilevato che i divieti introdotti durante la crisi finanziaria globale del 2007-2009 hanno danneggiato la liquidità, soprattutto dei titoli a bassa capitalizzazione, rallentato la formazione dei prezzi nei mercati ribassisti e avuto effetti neutri sui prezzi delle azioni. Le restrizioni del passato hanno avuto almeno un effetto positivo: hanno diffuso consapevolezza e fornito prove che i vincoli alle vendite allo scoperto erano più dannosi che utili. Come ha dichiarato il presidente della SEC Christopher Cox in un’intervista del 31 dicembre 2008, «<em>Con quello che sappiamo oggi, credo che tutto sommato la commissione non lo rifarebbe. I costi (dei divieti di vendita allo scoperto) sembrano superare i benefici</em>». Sebbene la crisi finanziaria globale avesse dimostrato l’inefficienza delle restrizioni, durante la crisi del debito sovrano in Europa diversi regolatori dell’UE hanno vietato le vendite allo scoperto, sperando di <strong>preservare la stabilità finanziaria</strong> e contenere l’incertezza. I titoli soggetti a vincoli hanno registrato aumenti più marcati della probabilità di default e una volatilità maggiore rispetto a quelli non vincolati, soprattutto nel caso delle istituzioni finanziarie più deboli.",
+  "In sintesi, da un punto di vista etico, il tentativo dei regolatori di calmare i mercati si può apprezzare come un modo per <strong>ridare fiducia</strong> agli investitori ed evitare la percezione di possibili speculazioni. Il passato ci ha però insegnato più volte che le restrizioni al mercato non portano benefici e finiscono per danneggiare l’<strong>efficienza naturale</strong> e l’effetto riequilibratore del libero mercato. Quando si valutano i divieti di vendita allo scoperto, non bisogna dimenticare che i loro limitati benefici vanno soppesati con le conseguenze del ridimensionare il ruolo dei venditori allo scoperto, che è quello di eliminare le sopravvalutazioni e garantire qualità e liquidità del mercato.",
+  "Bibliografia",
+  "· https://www.bloombergquint.com/onweb/france-italy-spain-ban-short-selling-to-curb-market-plunge",
+  "· https://www.cnbc.com/2020/03/17/short-selling-bans-sweep-europe-in-hope-of-stemming-stock-market-bleeding.html",
+  "· https://www.ilsole24ore.com/art/cosa-sono-vendite-scoperto-e-perche-vietarle-non-sempre-funziona-ADaDABE",
+  "· https://www.ft.com/content/b1b758d4-682e-11ea-800d-da70cff6e4d3",
+  "· https://scholar.princeton.edu/sites/default/files/Predatory%20Short%20Selling_0.pdf https://ftalphaville.ft.com/2020/03/18/1584523654000/Against-the-short-selling-ban/",
+  "· https://www.esrb.europa.eu/pub/pdf/wp/esrb.wp64.en.pdf",
+  "· http://www.eief.it/files/2013/01/pagano_beber_joff_2013.pdf"
+ ]
+}

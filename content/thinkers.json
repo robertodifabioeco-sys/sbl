@@ -1,0 +1,212 @@
+[
+ {
+  "id": "smith",
+  "file": "File:Adam Smith The Muir portrait (cropped 2).jpg",
+  "name": "Adam Smith",
+  "years": "1723–1790",
+  "role": {
+   "it": "Filosofo morale ed economista",
+   "en": "Moral philosopher and economist"
+  },
+  "quote": {
+   "en": "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest.",
+   "it": "Non è dalla benevolenza del macellaio, del birraio o del fornaio che ci aspettiamo il nostro pranzo, ma dalla cura che essi hanno per il proprio interesse."
+  },
+  "work": {
+   "it": "The Wealth of Nations, 1776",
+   "en": "The Wealth of Nations, 1776"
+  },
+  "license": "Public domain",
+  "author": "<div class=\"fn value\">\nUnknown author<span style=\"display: none;\">Unknown author</span></div>",
+  "source": "https://commons.wikimedia.org/wiki/File:Adam_Smith_The_Muir_portrait_(cropped_2).jpg"
+ },
+ {
+  "id": "tocqueville",
+  "file": "File:Portrait of Alexis de Tocqueville.jpg",
+  "name": "Alexis de Tocqueville",
+  "years": "1805–1859",
+  "role": {
+   "it": "Storico e pensatore politico",
+   "en": "Historian and political thinker"
+  },
+  "quote": {
+   "en": "Democracy and socialism have nothing in common but one word: equality. But notice the difference: while democracy seeks equality in liberty, socialism seeks equality in restraint and servitude.",
+   "it": "Democrazia e socialismo non hanno in comune che una parola: uguaglianza. Ma si noti la differenza: la democrazia vuole l'uguaglianza nella libertà, il socialismo vuole l'uguaglianza nella costrizione e nella servitù."
+  },
+  "work": {
+   "it": "Discorso all'Assemblea costituente, 1848",
+   "en": "Speech to the Constituent Assembly, 1848"
+  },
+  "license": "Public domain",
+  "author": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Th%C3%A9odore_Chass%C3%A9riau\" class=\"extiw\" title=\"w:en:Théodore Chassér",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Alexis_de_Tocqueville.jpg"
+ },
+ {
+  "id": "bastiat",
+  "file": "File:Frédéric Bastiat, PA04466 (cropped).jpg",
+  "name": "Frédéric Bastiat",
+  "years": "1801–1850",
+  "role": {
+   "it": "Economista e polemista",
+   "en": "Economist and pamphleteer"
+  },
+  "quote": {
+   "en": "The State is the great fictitious entity by which everyone seeks to live at the expense of everyone else.",
+   "it": "Lo Stato è la grande finzione attraverso la quale tutti cercano di vivere a spese di tutti gli altri."
+  },
+  "work": {
+   "it": "L'État, 1848",
+   "en": "L'État, 1848"
+  },
+  "license": "Public domain",
+  "author": "Dujardin. (artist) (printmaker)",
+  "source": "https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_Bastiat,_PA04466_(cropped).jpg"
+ },
+ {
+  "id": "mises",
+  "file": "File:Ludwig von Mises.jpg",
+  "name": "Ludwig von Mises",
+  "years": "1881–1973",
+  "role": {
+   "it": "Economista della Scuola austriaca",
+   "en": "Austrian School economist"
+  },
+  "quote": {
+   "en": "Government is essentially the negation of liberty.",
+   "it": "Il governo è, nella sua essenza, la negazione della libertà."
+  },
+  "work": {
+   "it": "Liberty and Property, 1958",
+   "en": "Liberty and Property, 1958"
+  },
+  "license": "CC BY-SA 3.0",
+  "author": "<a href=\"https://en.wikipedia.org/wiki/Ludwig_von_Mises_Institute\" class=\"extiw\" title=\"en:Ludwig von Mises Institute\">L",
+  "source": "https://commons.wikimedia.org/wiki/File:Ludwig_von_Mises.jpg"
+ },
+ {
+  "id": "hayek",
+  "file": "File:Friedrich August von Hayek, 27th January 1981, the 50th Anniversary of his first lecture at LSE, 1981 (4303825588).jpg",
+  "name": "Friedrich A. von Hayek",
+  "years": "1899–1992",
+  "role": {
+   "it": "Economista, Premio Nobel 1974",
+   "en": "Economist, Nobel laureate 1974"
+  },
+  "quote": {
+   "en": "The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.",
+   "it": "Il curioso compito dell'economia è dimostrare agli uomini quanto poco sappiano davvero di ciò che immaginano di poter progettare."
+  },
+  "work": {
+   "it": "The Fatal Conceit, 1988",
+   "en": "The Fatal Conceit, 1988"
+  },
+  "license": "No restrictions",
+  "author": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Friedrich_August_von_Hayek,_27th_January_1981,_the_50th_Anniversary_of_his_first_lecture_at_LSE,_1981_(4303825588).jpg"
+ },
+ {
+  "id": "popper",
+  "file": "File:Karl Popper.jpg",
+  "name": "Karl Popper",
+  "years": "1902–1994",
+  "role": {
+   "it": "Filosofo della scienza e della politica",
+   "en": "Philosopher of science and politics"
+  },
+  "quote": {
+   "en": "Unlimited tolerance must lead to the disappearance of tolerance.",
+   "it": "La tolleranza illimitata porta alla scomparsa della tolleranza."
+  },
+  "work": {
+   "it": "The Open Society and Its Enemies, 1945",
+   "en": "The Open Society and Its Enemies, 1945"
+  },
+  "license": "No restrictions",
+  "author": "<div class=\"fn value\">\n<a href=\"https://www.wikidata.org/wiki/Q55767510\" class=\"extiw\" title=\"d:Q55767510\">Franz Barta</",
+  "source": "https://commons.wikimedia.org/wiki/File:Karl_Popper.jpg"
+ },
+ {
+  "id": "einaudi",
+  "file": "File:Luigi Einaudi 1948 portrait (3x4 cropped).jpg",
+  "name": "Luigi Einaudi",
+  "years": "1874–1961",
+  "role": {
+   "it": "Economista, Presidente della Repubblica",
+   "en": "Economist, President of the Italian Republic"
+  },
+  "quote": {
+   "it": "Conoscere per deliberare.",
+   "en": "Know in order to decide."
+  },
+  "work": {
+   "it": "Prediche inutili, 1955",
+   "en": "Prediche inutili, 1955"
+  },
+  "license": "Public domain",
+  "author": "<div class=\"fn value\">\nUnknown photographer</div>",
+  "source": "https://commons.wikimedia.org/wiki/File:Luigi_Einaudi_1948_portrait_(3x4_cropped).jpg"
+ },
+ {
+  "id": "friedman",
+  "file": "File:Portrait of Milton Friedman.jpg",
+  "name": "Milton Friedman",
+  "years": "1912–2006",
+  "role": {
+   "it": "Economista, Premio Nobel 1976",
+   "en": "Economist, Nobel laureate 1976"
+  },
+  "quote": {
+   "en": "Nothing is so permanent as a temporary government program.",
+   "it": "Nulla è tanto permanente quanto un programma governativo temporaneo."
+  },
+  "work": {
+   "it": "Tyranny of the Status Quo, 1984",
+   "en": "Tyranny of the Status Quo, 1984"
+  },
+  "license": "CC0",
+  "author": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.edchoice.org/Newsroom/Media-Photos.aspx\">The Friedman Foundatio",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Milton_Friedman.jpg"
+ },
+ {
+  "id": "reagan",
+  "file": "File:Ronald Reagan 1981 presidential portrait (cropped).jpg",
+  "name": "Ronald Reagan",
+  "years": "1911–2004",
+  "role": {
+   "it": "40º Presidente degli Stati Uniti",
+   "en": "40th President of the United States"
+  },
+  "quote": {
+   "en": "In this present crisis, government is not the solution to our problem; government is the problem.",
+   "it": "Nella crisi attuale, il governo non è la soluzione al nostro problema: il governo è il problema."
+  },
+  "work": {
+   "it": "Discorso d'insediamento, 1981",
+   "en": "Inaugural Address, 1981"
+  },
+  "license": "Public domain",
+  "author": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Michael_Evans_(photographer)\" class=\"extiw\" title=\"w:en:Michael Evans (ph",
+  "source": "https://commons.wikimedia.org/wiki/File:Ronald_Reagan_1981_presidential_portrait_(cropped).jpg"
+ },
+ {
+  "id": "thatcher",
+  "file": "File:Margaret Thatcher (1983).jpg",
+  "name": "Margaret Thatcher",
+  "years": "1925–2013",
+  "role": {
+   "it": "Primo ministro del Regno Unito",
+   "en": "Prime Minister of the United Kingdom"
+  },
+  "quote": {
+   "en": "Socialist governments traditionally do make a financial mess. They always run out of other people's money.",
+   "it": "I governi socialisti combinano per tradizione un disastro finanziario. Finiscono sempre i soldi degli altri."
+  },
+  "work": {
+   "it": "Intervista a Thames TV, 1976",
+   "en": "Interview with Thames TV, 1976"
+  },
+  "license": "CC0",
+  "author": "<bdi><a href=\"https://www.wikidata.org/wiki/Q29553114\" class=\"extiw\" title=\"d:Q29553114\"><span title=\"Dutch photographer",
+  "source": "https://commons.wikimedia.org/wiki/File:Margaret_Thatcher_(1983).jpg"
+ }
+]

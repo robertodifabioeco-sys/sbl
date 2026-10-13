@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="cp" id="compass" data-lang="{{ lang }}">
+  <div class="cp-bg" aria-hidden="true"></div>
+
+  <!-- 1. introduzione -->
+  <div class="wrap cp-step cp-intro is-active" data-step="intro">
+    <div class="cp-intro-copy">
+      <p class="kicker light">{{ t.compass_kicker }}</p>
+      <h1>{{ t.compass_title }}</h1>
+      <p class="lead">{{ t.compass_intro }}</p>
+      <button class="btn btn-red cp-start" type="button">{{ t.compass_start }} →</button>
+    </div>
+    <div class="cp-intro-art" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <rect x="0" y="0" width="200" height="200" fill="#0d4b8c"/>
+        <rect x="200" y="0" width="200" height="200" fill="#123f73"/>
+        <rect x="0" y="200" width="200" height="200" fill="#0f2c50"/>
+        <rect x="200" y="200" width="200" height="200" fill="#ae0708"/>
+        <g stroke="rgba(255,255,255,.18)" stroke-width="1">{% for i in range(1, 10) %}<line x1="{{ i * 40 }}" y1="0" x2="{{ i * 40 }}" y2="400"/><line x1="0" y1="{{ i * 40 }}" x2="400" y2="{{ i * 40 }}"/>{% endfor %}</g>
+        <line x1="200" y1="0" x2="200" y2="400" stroke="#fff" stroke-width="2"/>
+        <line x1="0" y1="200" x2="400" y2="200" stroke="#fff" stroke-width="2"/>
+        <circle class="cp-ping" cx="276" cy="112" r="11" fill="#fff"/>
+        <circle cx="276" cy="112" r="11" fill="#fff"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 2. domande -->
+  <div class="wrap cp-step cp-quiz" data-step="quiz">
+    <div class="cp-card">
+      <div class="cp-progress"><span class="cp-count">{{ t.compass_q }} <b class="cp-n">1</b> {{ t.compass_of }} {{ compass.questions|length }}</span><div class="cp-bar"><i></i></div></div>
+      <p class="cp-question" aria-live="polite"></p>
+      <div class="cp-answers" role="group">
+        {% for o in compass.scale %}<button type="button" class="cp-ans" data-v="{{ o.v }}"><span class="dot" aria-hidden="true"></span>{{ o[lang] }}</button>{% endfor %}
+      </div>
+      <button type="button" class="cp-back">← {{ t.compass_back }}</button>
+    </div>
+  </div>
+
+  <!-- 3. email -->
+  <div class="wrap cp-step cp-gate" data-step="gate">
+    <form class="cp-card cp-form" novalidate>
+      <div class="cp-lock" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <h2>{{ t.compass_gate_title }}</h2>
+      <p>{{ t.compass_gate_text }}</p>
+      <label class="cp-field"><span class="sr">{{ t.compass_email }}</span><input type="email" name="email" placeholder="{{ t.compass_email }}" autocomplete="email" required></label>
+      <p class="cp-err" data-err="email">{{ t.compass_email_err }}</p>
+      <label class="cp-check"><input type="checkbox" name="newsletter"> <span>{{ t.compass_newsletter }}</span></label>
+      <label class="cp-check"><input type="checkbox" name="privacy" required> <span>{{ t.compass_privacy.replace(t.compass_privacy_link, '') }}<a href="/{{ paths.privacy[lang] }}" target="_blank">{{ t.compass_privacy_link }}</a></span></label>
+      <p class="cp-err" data-err="privacy">{{ t.compass_privacy_err }}</p>
+      <button class="btn btn-red" type="submit">{{ t.compass_submit }} →</button>
+    </form>
+  </div>
+
+  <!-- 4. risultato -->
+  <div class="wrap cp-step cp-result" data-step="result">
+    <div class="cp-res-grid">
+      <div class="cp-map">
+        <svg viewBox="-40 -40 480 480" role="img" aria-label="{{ t.compass_kicker }}">
+          <rect x="0" y="0" width="200" height="200" fill="#0d4b8c" opacity=".9"/>
+          <rect x="200" y="0" width="200" height="200" fill="#123f73" opacity=".9"/>
+          <rect x="0" y="200" width="200" height="200" fill="#0f2c50"/>
+          <rect x="200" y="200" width="200" height="200" fill="#ae0708" opacity=".85"/>
+          <g stroke="rgba(255,255,255,.16)">{% for i in range(1, 20) %}<line x1="{{ i * 20 }}" y1="0" x2="{{ i * 20 }}" y2="400"/><line x1="0" y1="{{ i * 20 }}" x2="400" y2="{{ i * 20 }}"/>{% endfor %}</g>
+          <line x1="200" y1="0" x2="200" y2="400" stroke="#fff" stroke-width="2"/>
+          <line x1="0" y1="200" x2="400" y2="200" stroke="#fff" stroke-width="2"/>
+          <g font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" letter-spacing="1.5">
+            <text x="200" y="-14" text-anchor="middle">{{ t.compass_axis_y_t|upper }}</text>
+            <text x="200" y="428" text-anchor="middle">{{ t.compass_axis_y_b|upper }}</text>
+            <text x="-14" y="205" text-anchor="end" transform="rotate(-90 -14 205)" dy="0">{{ t.compass_axis_x_l|upper }}</text>
+            <text x="414" y="205" text-anchor="start" transform="rotate(90 414 205)">{{ t.compass_axis_x_r|upper }}</text>
+          </g>
+          <g class="cp-dot">
+            <circle r="26" fill="#fff" opacity=".25" class="cp-ping2"/>
+            <circle r="12" fill="#fff" stroke="#ae0708" stroke-width="5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="cp-res-copy">
+        <p class="kicker light">{{ t.compass_result_kicker }}</p>
+        <h2 class="cp-profile"></h2>
+        <p class="cp-profile-text"></p>
+        <div class="cp-scores">
+          <div><span>{{ t.compass_econ }}</span><div class="cp-meter"><i data-axis="x"></i></div><small><em>{{ t.compass_axis_x_l }}</em><em>{{ t.compass_axis_x_r }}</em></small></div>
+          <div><span>{{ t.compass_civil }}</span><div class="cp-meter"><i data-axis="y"></i></div><small><em>{{ t.compass_axis_y_b }}</em><em>{{ t.compass_axis_y_t }}</em></small></div>
+        </div>
+      </div>
+    </div>
+    <div class="cp-extra">
+      <div class="cp-thinker">
+        <img alt="" width="120" height="150">
+        <div><p class="kicker">{{ t.compass_closest }}</p><h3></h3><blockquote></blockquote></div>
+      </div>
+      <div class="cp-books"><p class="kicker">{{ t.compass_books }}</p><ul></ul></div>
+    </div>
+    <div class="cp-actions">
+      <span>{{ t.compass_share }}</span>
+      <a class="cp-sh" data-net="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">{{ icon('whatsapp') }}</a>
+      <a class="cp-sh" data-net="x" target="_blank" rel="noopener" aria-label="X">{{ icon('x') }}</a>
+      <a class="cp-sh" data-net="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">{{ icon('linkedin') }}</a>
+      <button type="button" class="btn btn-ghost cp-retry">{{ t.compass_retry }}</button>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="compass-data">{{ compass_js|tojson }}</script>
+{% endblock %}

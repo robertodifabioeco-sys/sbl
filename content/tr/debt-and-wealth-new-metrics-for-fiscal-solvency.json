@@ -1,0 +1,37 @@
+{
+ "slug": "debt-and-wealth-new-metrics-for-fiscal-solvency",
+ "orig_lang": "en",
+ "author": "Renato Lembe Agurto",
+ "drop_blocks": [
+  0
+ ],
+ "category": "economics-finance",
+ "dek": {
+  "it": "I tassi reali brasiliani sembrano inspiegabili se il debito pubblico si misura sul PIL. Rapportato alla ricchezza privata, come propongono Franco e Buccini, il paradosso si scioglie.",
+  "en": "Brazil’s real interest rates look inexplicable when public debt is measured against GDP. Measured against private wealth, as Franco and Buccini propose, the paradox disappears."
+ },
+ "title_tr": "Debito e ricchezza: nuovi parametri per la solvibilità fiscale",
+ "blocks_tr": [
+  null,
+  null,
+  "L’economia brasiliana è un paradosso vivente: da tempo immemorabile vi si verificano fenomeni bizzarri e inspiegabili. Questo, almeno, è il presupposto implicito condiviso dalla grande maggioranza degli economisti brasiliani di rilievo, che per questi fatti anomali hanno coniato un termine apposito: «jabuticaba», dal nome di un frutto tipico del Brasile (Franco, 2012).",
+  "Quattro anni fa i tassi d’interesse reali brasiliani, fra i più alti del mondo, erano la «jabuticaba» più enigmatica del Paese, ritenuta inspiegabile secondo il ragionamento convenzionale. Per l’economia del senso comune, nei mercati aperti i tassi reali dipendono dalla (in)solvibilità fiscale: i governi più indebitati, se impegnati nella stabilità dei prezzi, devono attirare il risparmio privato per sostenere la loro normale spesa netta. Per farlo devono alzare i tassi d’interesse, a parità di altre variabili, e quindi i tassi <em>reali</em> tendono a salire.",
+  "Tuttavia, se si confrontano i dati brasiliani con quelli di altre economie avanzate ed emergenti, i tassi reali del Brasile non si spiegano con il suo debito pubblico (se misurato in percentuale del <em>prodotto nazionale</em>). Fra il 2011 e il 2016, per esempio, i tassi brasiliani erano il <em>doppio</em> di quelli islandesi, pur a fronte di un <em>rapporto debito/PIL più basso</em>.",
+  null,
+  "Fonte: FMI",
+  "Nel mondo delle «jabuticabas», fatti straordinari richiedono spiegazioni straordinarie. Cercandole, alcuni hanno sostenuto che la politica monetaria brasiliana sia insolitamente inefficace, spingendo per compensazione i tassi a livelli «esorbitanti». Altri hanno indicato nell’incertezza giuridica il fattore esplicativo decisivo. Un terzo gruppo ha accusato le autorità monetarie di formare una rete di potere con il settore finanziario, composto da cinque oligopolisti, entrambi interessati a mantenere alti i tassi reali per ragioni politiche e gestionali (Barboza, 2015).",
+  "D’altra parte, il grafico comparativo precedente può suggerire, in modo sorprendente, che il ragionamento convenzionale sui tassi reali non valga nemmeno nelle altre economie. Soprattutto nei Paesi avanzati, tassi e debito sembrano piuttosto scorrelati.",
+  "Sorge subito una domanda: perché gli investitori sono più disposti a tenere i propri fondi a rendimenti negativi nelle economie avanzate e più indebitate che a rendimenti positivi in quelle in via di sviluppo e meno indebitate? Le istituzioni sono state considerate la risposta adeguata a questo problema. Ma anche la visione convenzionale può spiegarlo, se la si guarda da un’altra prospettiva.",
+  "In risposta al presupposto della «jabuticaba», gli economisti brasiliani Gustavo Franco ed Evandro Buccini (2017) hanno sostenuto che il debito non andrebbe misurato in rapporto al prodotto nazionale, ma alla <em>ricchezza privata</em>. Il motivo è semplicissimo: gli investitori non comprano titoli di Stato con il proprio reddito (che può essere interamente assorbito dalle spese quotidiane), ma con la propria <em>ricchezza finanziaria</em>, cioè con i risparmi.",
+  "Dal punto di vista matematico questa precisazione concettuale sarebbe inutile, portando a risultati simili, se prodotto e ricchezza privata fossero proporzionali in tutto il mondo. Ma non lo sono: due economie con lo stesso PIL pro capite possono differire molto quanto a ricchezza delle famiglie. La differenza nasce dal fatto che la produzione di un anno, pur essendo irrilevante per la misurazione della produzione futura, <em>entrerà nel calcolo della ricchezza futura finché non sarà interamente consumata</em>. I beni durevoli prodotti nel 2020, per esempio, non saranno inclusi nella produzione del 2021, ma lo saranno certamente nella ricchezza del 2021, perché resteranno disponibili per ulteriori consumi. Di conseguenza, i Paesi industrializzati tendono a essere più ricchi delle economie basate sulle materie prime, anche a parità di produzione annua. Pertanto, a parità di debito pubblico e di PIL (e quindi di rapporto debito/PIL), i primi saranno meno indebitati dei secondi.",
+  null,
+  "Fonte: FMI, Global Wealth Report",
+  "Questo nuovo metodo di calcolo, usato per costruire il secondo grafico, permette al debito di spiegare gli alti tassi brasiliani e salva la visione convenzionale dal discredito. Se si escludesse il Giappone (il valore anomalo a destra), la correlazione positiva fra debito e tassi sarebbe ancora più forte.",
+  "Ovviamente la misurazione della ricchezza privata pone molti problemi operativi e concettuali, ma i suoi benefici teorici e pratici per l’analisi economica non vanno sottovalutati. La macroeconomia dovrebbe svilupparsi in questa direzione, migliorando la precisione nella misurazione della ricchezza e verificando ipotesi in cui la ricchezza è il termine di paragone.",
+  "Non è un caso che Adam Smith e Jean-Baptiste Say, padri del ragionamento economico, si concentrino più sulla <em>ricchezza</em> che sul reddito: il suo potere esplicativo abbraccia un ventaglio più ampio di fenomeni economici, perfino le paradossali «jabuticabas» brasiliane.",
+  "<em>BIBLIOGRAFIA</em>",
+  "Franco, G. (2012). <em>As Leis Secretas da Economia: Revisitando Roberto Campos e as leis do Kafka</em>. Rio de Janeiro, Brasile: Zahar.",
+  "Franco, G., Buccini, E. (2017). Riqueza e ‘intolerância com dívida’: Estimativas empíricas muito preliminares [online]. Disponibile su: <a href=\"http://www.gustavofranco.com.br/uploads/files/EB75%20paper%20riqueza%20final_limpo_.pdf\"><u>http://www.gustavofranco.com.br/uploads/files/EB75%20paper%20riqueza%20final_limpo_.pdf</u></a>  [consultato il 20 febbraio 2021].",
+  "Barboza, R. (2015). Taxa de juros e mecanismos de transmissão da política monetária no Brasil. <em>Revista de Economia Política, 35</em>(1), 133-155."
+ ]
+}

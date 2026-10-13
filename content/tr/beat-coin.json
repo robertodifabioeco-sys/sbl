@@ -1,0 +1,30 @@
+{
+ "slug": "beat-coin",
+ "orig_lang": "it",
+ "author": "C. Melella, G.S. Di Frisco",
+ "drop_blocks": [
+  13
+ ],
+ "category": "economics-finance",
+ "dek": {
+  "it": "Dall’intuizione di Milton Friedman al protocollo di Satoshi Nakamoto, il Bitcoin riapre il dibattito su cosa dia valore a una moneta e sulla concorrenza tra valute private.",
+  "en": "From Milton Friedman’s intuition to Satoshi Nakamoto’s protocol, Bitcoin reopens the debate on what gives money its value and on competition between private currencies."
+ },
+ "title_tr": "BEAT – COIN",
+ "blocks_tr": [
+  "If Star Wars was born in the 1970s from George Lucas’s visionary idea, the story of Bitcoin also begins “<em>a long time ago in a galaxy far, far away”</em>.",
+  "It was Milton Friedman who put forward a simple and revolutionary idea: a decentralised, virtual means of payment designed to transfer value between users securely and without any need for third-party intermediaries. It took a full thirty years for the Chicago economist’s futuristic utopia to become reality.",
+  "Satoshi Nakamoto, probably a pseudonym, is the man who at the end of 2008, in the middle of the housing crisis that was sweeping through financial markets, had the idea of releasing the <em>Bitcoin</em> protocol online, followed only in the early months of 2009 by the release of the Blockchain system; and, as they say, the rest is history.",
+  "Between those who today cry out about a new <em>Tulip Mania</em> and those who call for a swift intervention by regulators to prevent another crash of the system, there are others who throw themselves into a real digital gold rush. The extraction process, <em> mining</em>, however, is a procedure that involves a <em>peer-to-peer computing network </em>and a significant amount of electricity, aimed at solving cryptographic puzzles that give rise to the <em>blocks</em> that make up the <em>Blockchain</em>.",
+  "With the debate also heating up because of the listing of <em>futures</em> contracts on the Chicago exchange, just a few weeks ago the cryptocurrency came close to 20,000 dollars. An astronomical figure, considering that <em>Bitcoin</em> was worth only a few hundred dollars just a year ago.",
+  null,
+  "A few considerations are therefore needed to understand whether this phenomenon will change the economic system as we know it or whether, like every passing fad, it will be remembered as a momentary bout of collective hysteria whose causes should be sought elsewhere.",
+  "Although it is among the most debated topics, economists agree that money must be: <em>a medium of exchange</em>; <em>a unit of account</em>; <em>a store of value</em>. While the first two features are easily found in <em>Bitcoin</em> and the other cryptocurrencies in circulation, the third element, the so-called <em>underlying value</em>, is instead the subject of heated dispute. For centuries the underlying asset was gold, a precious metal that is scarce in nature and to which money was anchored, until the international community abandoned it for a floating system of fixed exchange rates with the Bretton Woods Agreements of 1971.",
+  "If today the underlying of every euro or dollar lies in the legal value of the instrument itself, the question many are asking is: <em><u>“who will guarantee that Tom, Dick or Harry will undertake to accept Bitcoin or any other cryptocurrency produced in exchange for goods and/or services?”</u></em>",
+  "The market took centuries to select a suitable commodity, one that was scarce and rested on consumers’ mutual trust. And even though <em>Bitcoin</em> and many other cryptocurrencies are finite in number, it does not seem heretical to us to argue that the underlying, <em>the intrinsic value</em>, contrary to what some lightly claim, could be the <em>Blockchain</em>: <em>the technology that allows transactions to be managed through a system that is transferable but cannot be duplicated.</em>",
+  "If at the dawn of the dot-com bubble we could only guess at the impact that <em>the Internet of Things</em> would have on our lives, today, with cryptocurrencies, we can form a more concrete idea of what our future will look like.",
+  "What is remarkable about this emerging phenomenon is that currencies with different features are constantly being produced by individuals and private institutions and put on the market, leaving consumers free to choose. Each consumer will in fact select, according to their own needs, the currency that best satisfies them, thereby maximising their utility and driving out the other, <em>less good</em> ones, contrary to what Sir Thomas Gresham argued centuries ago.",
+  "Finally, it is to be expected that <em>competition</em> will lead to the success of some virtual currencies whose value may remain stable over time, thus eliminating the problem of volatility and providing holders with security about their purchasing power.",
+  null
+ ]
+}

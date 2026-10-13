@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% from "card.html" import card %}
+{% block main %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">{{ t.nav_articles }}</p>
+    <h1>{{ t.articles_title }}</h1>
+    <p>{{ t.articles_intro }}</p>
+  </div>
+  <div class="tiles" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+<section class="section" style="padding-top: 48px">
+  <div class="wrap">
+    <div class="toolbar">
+      <div class="chips" role="group" aria-label="{{ 'Filtra per categoria' if lang == 'it' else 'Filter by category' }}">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">{{ t.filter_all }}</button>
+        {% for c in ['economics-finance', 'politics', 'world'] %}<button class="chip" type="button" data-filter="{{ c }}" aria-pressed="false">{{ cats[c][lang] }}</button>{% endfor %}
+      </div>
+      <label class="search"><span class="sr">{{ t.search_ph }}</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="{{ t.search_ph }}" autocomplete="off">
+      </label>
+    </div>
+    <p class="count" aria-live="polite"><span id="count">{{ articles|length }}</span> {{ 'articoli' if lang == 'it' else 'articles' }}</p>
+    <div class="grid grid-3 cards" id="article-list" style="margin-top: 18px">
+      {% for a in articles %}{{ card(a, lang, t, cats) }}{% endfor %}
+    </div>
+    <p class="empty" id="empty">{{ t.no_results }}</p>
+  </div>
+</section>
+{% endblock %}

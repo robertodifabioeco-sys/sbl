@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% from "card.html" import quote_slider, compass_teaser %}
+{% block main %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">{{ 'Dal' if lang == 'it' else 'Since' }} {{ site.founded }}</p>
+    <h1>{{ t.about_title }}</h1>
+    <p>{{ t.about_lead }}</p>
+  </div>
+  <div class="tiles" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <img src="/img/site/team-aula.jpg" alt="{{ 'Il team SBL in aula, in Bocconi' if lang == 'it' else 'The SBL team at Bocconi' }}" width="1600" height="900">
+    </div>
+    <div class="copy">
+      {% for p in t.about_body %}<p{% if loop.first %} class="big"{% endif %}>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="photo-strip">
+      {% for e in events[4:8] %}<figure class="reveal"><img src="/img/events/{{ e.img }}" alt="{{ e.title[lang] }}" loading="lazy"><figcaption>{{ e.title[lang] }}</figcaption></figure>{% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top: 0">
+  <div class="wrap define">
+    <div><p class="kicker">{{ 'Identità' if lang == 'it' else 'Identity' }}</p><h2>{{ t.values_title }}</h2></div>
+    <div class="define-copy">{% for p in t.values_text %}<p>{{ p }}</p>{% endfor %}</div>
+  </div>
+</section>
+<section class="section quotes-section" style="padding-top: 0">
+  <div class="wrap">
+    {{ quote_slider(quotes, lang, t) }}
+  </div>
+</section>
+<section class="section dark">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker light">{{ t.what_kicker }}</p><h2>{{ t.what_title }}</h2></div></div>
+    <div class="pillars" style="border-top-color: var(--red)">
+      {% for w in t.what %}
+      <div class="pillar" style="border-left-color: rgba(255,255,255,.12)"><span class="n">0{{ loop.index }}</span><h3>{{ w.t }}</h3><p style="color: rgba(255,255,255,.75)">{{ w.d }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{{ compass_teaser(lang, t, paths) }}
+<section class="quote-band">
+  <div class="wrap">
+    <div class="portrait"><img src="/img/thinkers/friedman-wide.jpg" alt="Milton Friedman" loading="lazy"></div>
+    <div><blockquote>{{ t.quote_band }}</blockquote><cite>{{ t.quote_band_cite }}</cite></div>
+  </div>
+</section>
+{% endblock %}

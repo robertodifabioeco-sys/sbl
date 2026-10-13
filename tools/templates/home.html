@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% from "card.html" import card, quote_slider, compass_teaser %}
+{% block main %}
+<section class="hero">
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker light">{{ t.hero_kicker }}</p>
+      <h1>{{ t.hero_title }}</h1>
+      <p class="lead">{{ t.hero_text }}</p>
+      <div class="actions">
+        <a class="btn btn-red" href="/{{ paths.articles[lang] }}">{{ t.hero_cta1 }} →</a>
+        <a class="btn btn-ghost" href="/{{ paths.about[lang] }}">{{ t.hero_cta2 }}</a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <div class="frame"><img src="/img/thinkers/friedman-wide.jpg" alt="Milton Friedman" width="600" height="750"></div>
+      <figcaption>
+        <blockquote>{{ '«' if lang == 'it' else '“' }}{{ friedman.quote[lang] }}{{ '»' if lang == 'it' else '”' }}</blockquote>
+        <cite>Milton Friedman</cite>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">{{ t.featured }}</p><h2>{{ t.latest }}</h2></div>
+      <a class="more" href="/{{ paths.articles[lang] }}">{{ t.all_articles }}</a>
+    </div>
+    {% set f = featured %}
+    <article class="feature reveal">
+      <div class="thumb"><img src="/{{ f.v[lang].image }}" alt="" width="1200" height="750"></div>
+      <div class="body">
+        <p class="kicker">{{ cats[f.category][lang] }}</p>
+        <h3><a href="/{{ f.v[lang].path }}">{{ f.v[lang].title }}</a></h3>
+        <p>{{ f.v[lang].dek }}</p>
+        <div class="meta">{% if f.author %}<span>{{ f.author }}</span>{% endif %}<time datetime="{{ f.date_iso }}">{{ f.date_h[lang] }}</time><span>{{ f.minutes }} {{ t.min_read }}</span></div>
+      </div>
+    </article>
+    <div class="grid grid-3 cards" style="margin-top: 32px">
+      {% for a in latest %}{{ card(a, lang, t, cats) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="wrap">
+    <div class="portrait"><img src="/img/thinkers/friedman-wide.jpg" alt="Milton Friedman" loading="lazy" width="300" height="300"></div>
+    <div>
+      <blockquote>{{ t.quote_band }}</blockquote>
+      <cite>{{ t.quote_band_cite }}</cite>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">{{ t.what_kicker }}</p><h2>{{ t.what_title }}</h2></div></div>
+    <div class="pillars">
+      {% for w in t.what %}
+      <div class="pillar reveal"><span class="n">0{{ loop.index }}</span><h3>{{ w.t }}</h3><p>{{ w.d }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{{ compass_teaser(lang, t, paths) }}
+
+<section class="section dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker light">{{ t.events_kicker }}</p><h2>{{ t.events_title }}</h2></div>
+      <a class="more" href="/{{ paths.events[lang] }}">{{ t.events_more }}</a>
+    </div>
+    <div class="mosaic">
+      {% for e in events[:5] %}
+      <figure class="reveal"><img src="/img/events/{{ e.img }}" alt="{{ e.title[lang] }}" loading="lazy"><figcaption>{{ e.title[lang] }}<small>{{ e.desc[lang] }}</small></figcaption></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section quotes-section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="kicker">{{ t.quotes_kicker }}</p><h2>{{ t.quotes_title }}</h2></div></div>
+    {{ quote_slider(quotes, lang, t) }}
+  </div>
+</section>
+
+{% for c in ['economics-finance', 'politics', 'world'] %}
+<section class="section cat-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">{{ t.featured }}</p><h2>{{ cats[c][lang] }}</h2></div>
+      <a class="more" href="/{{ paths.articles[lang] }}#{{ c }}">{{ t.all_articles }}</a>
+    </div>
+    <div class="grid grid-4 cards">
+      {% for a in by_cat[c][:4] %}{{ card(a, lang, t, cats) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section shelf-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="kicker">{{ t.books_kicker }}</p><h2>{{ t.books_title }}</h2><p>{{ t.books_text }}</p></div>
+      <a class="more" href="/{{ paths.thinkers[lang] }}">{{ t.books_more }}</a>
+    </div>
+    <div class="shelf">
+      {% for bk in books %}
+      <a class="book book-{{ bk.color }} reveal" href="/{{ paths.thinkers[lang] }}#{{ bk.who }}">
+        <span class="book-top"><span class="book-year">{{ bk.year }}</span><img src="/img/thinkers/{{ 'friedman-wide' if bk.who == 'friedman' else bk.who }}.jpg" alt="" loading="lazy" width="64" height="64"></span>
+        <span class="book-title">{{ bk.title[lang] }}</span>
+        <span class="book-author">{{ bk.author_en if (lang == 'en' and bk.author_en) else bk.author }}</span>
+        <span class="book-note">{{ bk.note[lang] }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div><h2>{{ t.join_title }}</h2><p>{{ t.join_text }}</p></div>
+    <div class="side">
+      {% include "socials.html" %}
+      <a class="btn btn-red" href="/{{ paths.contact[lang] }}">{{ t.join_cta }} →</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

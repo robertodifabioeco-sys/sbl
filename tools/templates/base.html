@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="{{ lang }}" class="no-js">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className="js";try{var p=localStorage.getItem("sbl-lang"),r=document.referrer,a={% raw %}{{% endraw %}"it":"{{ root }}{{ alternates.it }}","en":"{{ root }}{{ alternates.en }}"{% raw %}}{% endraw %};if(p&&p!=="{{ lang }}"&&a[p]&&!(r&&r.indexOf(location.host)>-1))location.replace(a[p]);}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc }}">
+<link rel="canonical" href="{{ abs(path) }}">
+{% for l, p in alternates.items() %}<link rel="alternate" hreflang="{{ l }}" href="{{ abs(p) }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ abs(alternates['it']) }}">
+<meta property="og:site_name" content="SBL – Milton Friedman Society">
+<meta property="og:type" content="{{ og_type|default('website') }}">
+<meta property="og:title" content="{{ og_title|default(page_title) }}">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:url" content="{{ abs(path) }}">
+<meta property="og:image" content="{{ abs(og_image|default('img/og-default.jpg')) }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{ 'it_IT' if lang == 'it' else 'en_GB' }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SBL_Friedman">
+<meta name="theme-color" content="#0a2240">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css?v={{ version }}">
+<link rel="stylesheet" href="/css/features.css?v={{ version }}">
+{% for ld in jsonld %}<script type="application/ld+json">{{ ld|tojson }}</script>
+{% endfor %}</head>
+<body>
+<a class="skip" href="#main">{{ t.skip }}</a>
+<div class="masthead">
+<div class="tribar" aria-hidden="true"><span></span><span></span><span></span></div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/{{ paths.home[lang] }}" aria-label="SBL – Milton Friedman Society, Home">
+      <img src="/img/sbl-mark.svg" alt="SBL" width="118" height="37">
+      <span class="brand-text"><b>Studenti Bocconiani Liberali</b><small>Milton Friedman Society</small></span>
+    </a>
+    <div class="lang-dd" data-lang="{{ lang }}">
+      <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="{{ t.lang_menu }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
+        <span>{{ 'IT' if lang == 'it' else 'ENG' }}</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <ul class="lang-menu" role="menu">
+        <li role="none"><a role="menuitemradio" aria-checked="{{ 'true' if lang == 'it' else 'false' }}" href="/{{ alternates['it'] }}" hreflang="it" lang="it" data-set-lang="it"><b>IT</b> Italiano</a></li>
+        <li role="none"><a role="menuitemradio" aria-checked="{{ 'true' if lang == 'en' else 'false' }}" href="/{{ alternates['en'] }}" hreflang="en" lang="en" data-set-lang="en"><b>ENG</b> English</a></li>
+      </ul>
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><i aria-hidden="true"></i><span class="menu-label">{{ t.menu }}</span></button>
+    <nav class="nav" id="nav" aria-label="Menu">
+      <button class="nav-close" type="button">{{ t.close }}</button>
+      {% for key in ['home', 'articles', 'events', 'thinkers', 'about', 'contact'] %}
+      <a href="/{{ paths[key][lang] }}"{% if section == key %} aria-current="page"{% endif %}>{{ t['nav_' ~ key] }}</a>
+      {% endfor %}
+      <a class="nav-cta" href="/{{ paths.compass[lang] }}"{% if section == 'compass' %} aria-current="page"{% endif %}>{{ t.nav_compass }}</a>
+    </nav>
+  </div>
+</header>
+</div>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap top">
+    <div>
+      <img class="mark" src="/img/sbl-mark.svg" alt="SBL" width="150" height="47">
+      <p>{{ t.footer_about }}</p>
+      <p>{{ site.address }}<br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </div>
+    <div>
+      <h4>{{ t.footer_nav }}</h4>
+      <ul>
+        {% for key in ['articles', 'events', 'compass', 'thinkers', 'about', 'contact', 'credits', 'privacy'] %}
+        <li><a href="/{{ paths[key][lang] }}">{{ t.credits_link if key == 'credits' else (t.privacy_title if key == 'privacy' else t['nav_' ~ key]) }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h4>{{ t.footer_follow }}</h4>
+      {% include "socials.html" %}
+    </div>
+  </div>
+  <div class="wrap bottom">
+    <p>© {{ year }} {{ t.footer_rights }}</p>
+    <p>{{ t.footer_disclaimer }}</p>
+  </div>
+</footer>
+<script src="/js/main.js?v={{ version }}" defer></script>
+<script src="/js/features.js?v={{ version }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% macro card(a, lang, t, cats, extra='') -%}
+<article class="card reveal" data-cat="{{ a.category }}" data-search="{{ a.v[lang].title }} {{ a.author }} {{ a.v[lang].dek }}"{{ extra }}>
+  <div class="thumb"><img src="/{{ a.v[lang].thumb }}" alt="" loading="lazy" width="800" height="500"></div>
+  <div class="cat">{{ cats[a.category][lang] }}</div>
+  <h3><a href="/{{ a.v[lang].path }}">{{ a.v[lang].title }}</a></h3>
+  <p class="dek">{{ a.v[lang].dek }}</p>
+  <div class="meta">{% if a.author %}<span class="author">{{ a.author }}</span>{% endif %}<time datetime="{{ a.date_iso }}">{{ a.date_h[lang] }}</time><span>{{ a.minutes }} {{ t.min_read }}</span></div>
+</article>
+{%- endmacro %}
+
+{% macro quote_card(q, lang) -%}
+<figure class="qcard reveal">
+  <span class="qmark" aria-hidden="true">“</span>
+  <blockquote>{{ q[lang] }}</blockquote>
+  <figcaption>
+    <img src="/img/thinkers/{{ 'friedman-wide' if q.who == 'friedman' else q.who }}.jpg" alt="" loading="lazy" width="48" height="48">
+    <span><b>{{ q.name }}</b><small>{{ q.src[lang] }}</small></span>
+  </figcaption>
+</figure>
+{%- endmacro %}
+
+{% macro quote_slider(quotes, lang, t) -%}
+<div class="qslider" data-qslider>
+  <div class="qs-track">
+    {% for q in quotes %}
+    <figure class="qs-slide{% if loop.first %} is-active{% endif %}" aria-hidden="{{ 'false' if loop.first else 'true' }}">
+      <div class="qs-photo"><img src="/img/thinkers/{{ 'friedman-wide' if q.who == 'friedman' else q.who }}.jpg" alt="{{ q.name }}" loading="lazy" width="600" height="750"></div>
+      <div class="qs-text">
+        <span class="qs-mark" aria-hidden="true">“</span>
+        <blockquote>{{ q[lang] }}</blockquote>
+        <figcaption><b>{{ q.name }}</b><small>{{ q.src[lang] }}</small></figcaption>
+      </div>
+    </figure>
+    {% endfor %}
+  </div>
+  <div class="qs-nav">
+    <button type="button" class="qs-prev" aria-label="{{ 'Citazione precedente' if lang == 'it' else 'Previous quote' }}">←</button>
+    <div class="qs-dots">{% for q in quotes %}<button type="button" aria-label="{{ loop.index }}"{% if loop.first %} aria-current="true"{% endif %}></button>{% endfor %}</div>
+    <button type="button" class="qs-next" aria-label="{{ 'Citazione successiva' if lang == 'it' else 'Next quote' }}">→</button>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro compass_teaser(lang, t, paths) -%}
+<section class="cp-teaser">
+  <div class="wrap">
+    <div class="cpt-art" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div>
+    <div class="cpt-copy">
+      <p class="kicker light">{{ t.compass_kicker }}</p>
+      <h2>{{ t.compass_teaser_title }}</h2>
+      <p>{{ t.compass_teaser_text }}</p>
+    </div>
+    <a class="btn btn-red" href="/{{ paths.compass[lang] }}">{{ t.compass_start }} →</a>
+  </div>
+</section>
+{%- endmacro %}

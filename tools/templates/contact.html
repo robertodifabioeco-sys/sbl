@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block main %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">{{ t.nav_contact }}</p>
+    <h1>{{ t.contact_title }}</h1>
+    <p>{{ t.contact_intro }}</p>
+  </div>
+  <div class="tiles" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div><h3>{{ t.contact_email }}</h3><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+      <div><h3>{{ t.contact_address }}</h3><p>{{ site.address }}</p></div>
+      <div><h3>{{ t.contact_social }}</h3>{% include "socials.html" %}</div>
+    </div>
+    <p style="margin-top: 36px"><a class="btn btn-navy" href="mailto:{{ site.email }}">{{ t.contact_cta }} →</a></p>
+  </div>
+</section>
+{% endblock %}

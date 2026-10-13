@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block main %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">{{ t.thinkers_kicker }}</p>
+    <h1>{{ t.thinkers_page_title }}</h1>
+    <p>{{ t.thinkers_page_intro }}</p>
+  </div>
+  <div class="tiles" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+<section class="section" style="padding-top: 24px">
+  <div class="wrap">
+    {% for th in thinkers %}
+    <div class="thinker-row reveal" id="{{ th.id }}">
+      <div class="ph"><img src="/img/thinkers/{{ th.id }}.jpg" alt="{{ th.name }}" loading="lazy" width="600" height="750"></div>
+      <div>
+        <h2>{{ th.name }}</h2>
+        <div class="role">{{ th.years }} · {{ th.role[lang] }}</div>
+        <blockquote>{{ '«' if lang == 'it' else '“' }}{{ th.quote[lang] }}{{ '»' if lang == 'it' else '”' }}</blockquote>
+        <cite>{{ th.work[lang] }}</cite>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="quote-band" style="background: var(--blue)">
+  <div class="wrap">
+    <div class="portrait" style="border-radius: 0; aspect-ratio: 3/2; width: clamp(200px, 26vw, 360px)"><img src="/img/site/reagan-friedman-1988.jpg" alt="{{ 'Ronald Reagan e Milton Friedman, 1988' if lang == 'it' else 'Ronald Reagan and Milton Friedman, 1988' }}" loading="lazy" style="filter:none"></div>
+    <div>
+      <blockquote style="font-size: clamp(22px, 2.6vw, 32px)">{{ 'Ronald Reagan consegna a Milton Friedman la Medaglia presidenziale della libertà, alla Casa Bianca, nel 1988.' if lang == 'it' else 'Ronald Reagan presents Milton Friedman with the Presidential Medal of Freedom at the White House, 1988.' }}</blockquote>
+      <cite>{{ 'Foto: Casa Bianca, pubblico dominio' if lang == 'it' else 'Photo: The White House, public domain' }}</cite>
+    </div>
+  </div>
+</section>
+{% endblock %}
