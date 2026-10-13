@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pubblica il sito DEFINITIVO su www.friedmansociety.com (ramo gh-pages del repo sbl).
+# Pubblica il sito DEFINITIVO su friedmansociety.com (ramo gh-pages del repo sbl).
 # Da usare solo dopo che i DNS del dominio puntano a GitHub Pages.
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -17,4 +17,4 @@ git commit -q -m "Sito SBL $(date +%Y-%m-%d\ %H:%M)"
 git -c http.postBuffer=524288000 push -q -f https://github.com/robertodifabioeco-sys/sbl.git gh-pages
 cd - >/dev/null
 rm -rf "$TMP"
-echo "Pubblicato: https://www.friedmansociety.com/"
+echo "Pubblicato: https://friedmansociety.com/"

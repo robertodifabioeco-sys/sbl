@@ -465,7 +465,7 @@ def main():
     if PREVIEW:
         (DIST / "CNAME").unlink(missing_ok=True)
     else:
-        (DIST / "CNAME").write_text("www.friedmansociety.com\n", encoding="utf-8")
+        (DIST / "CNAME").write_text("friedmansociety.com\n", encoding="utf-8")
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Sito generato: {len(articles)} articoli, {len(sitemap)} pagine in sitemap, {len(redirects)} redirect")
 
