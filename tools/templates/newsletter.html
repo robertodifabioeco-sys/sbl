@@ -1,21 +1,24 @@
 {% if site.newsletter_form and site.newsletter_form.action %}
-<section class="nl-box">
+<section class="nl-box" id="newsletter">
   <div class="wrap">
     <div class="nl-copy">
       <p class="kicker light">Newsletter</p>
       <h2>{{ t.nl_title }}</h2>
       <p>{{ t.nl_text }}</p>
+      {% if site.newsletter_form.url %}<p class="nl-past"><a href="{{ site.newsletter_form.url }}" target="_blank" rel="noopener">{{ t.nl_past }}</a></p>{% endif %}
     </div>
-    <form class="nl-form" data-nl novalidate>
+    <form class="nl-form" data-nl action="{{ site.newsletter_form.action }}" method="post" target="_blank" novalidate>
+      {% for k, v in (site.newsletter_form.extra or {}).items() %}<input type="hidden" name="{{ k }}" value="{{ lang if k == 'locale' else v }}">{% endfor %}
       <label class="sr" for="nl-email">{{ t.compass_email }}</label>
       <div class="nl-row">
-        <input id="nl-email" type="email" name="email" placeholder="{{ t.compass_email }}" autocomplete="email" required>
-        <button class="btn btn-red" type="submit">{{ t.nl_cta }}</button>
+        <input id="nl-email" type="email" name="{{ site.newsletter_form.email or 'email' }}" placeholder="{{ t.compass_email }}" autocomplete="email" required>
+        <button class="btn btn-red" type="submit" aria-describedby="nl-newtab">{{ t.nl_cta }}</button>
       </div>
+      <span class="sr" id="nl-newtab">{{ t.nl_newtab }}</span>
       <label class="nl-check"><input type="checkbox" name="privacy" required> <span>{{ t.compass_privacy.replace(t.compass_privacy_link, '') }}<a href="/{{ paths.privacy[lang] }}">{{ t.compass_privacy_link }}</a></span></label>
       <p class="nl-msg" role="status" aria-live="polite" data-ok="{{ t.nl_ok }}" data-err="{{ t.compass_email_err }}" data-priv="{{ t.compass_privacy_err }}"></p>
     </form>
   </div>
 </section>
-<script type="application/json" id="nl-config">{{ {"action": site.newsletter_form.action, "email": site.newsletter_form.email or "EMAIL", "extra": site.newsletter_form.extra or {}, "lang": lang}|tojson }}</script>
+<script type="application/json" id="nl-config">{{ {"action": site.newsletter_form.action, "email": site.newsletter_form.email or "email", "extra": site.newsletter_form.extra or {}, "lang": lang}|tojson }}</script>
 {% endif %}

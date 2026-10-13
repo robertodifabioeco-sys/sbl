@@ -15,6 +15,7 @@
   if (openBtn) openBtn.addEventListener("click", function () { setMenu(true); });
   if (closeBtn) closeBtn.addEventListener("click", function () { setMenu(false); if (openBtn) openBtn.focus(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+  if (nav) nav.querySelectorAll('a[href^="#"]').forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
 
   // Comparsa morbida degli elementi
   var els = document.querySelectorAll(".reveal");

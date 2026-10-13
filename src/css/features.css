@@ -18,7 +18,7 @@
 .nav .nav-cta { background: var(--red); color: #fff; margin-left: 8px; padding: 10px 14px; }
 .nav .nav-cta::after { display: none; }
 .nav .nav-cta:hover, .nav .nav-cta[aria-current="page"] { background: var(--red-deep); color: #fff; }
-@media (max-width: 1020px) {
+@media (max-width: 1260px) {
   .lang-dd { margin-left: auto; }
   .site-header .menu-btn { margin-left: 10px; }
   .nav .nav-cta { margin: 18px 0 0; text-align: center; font: 600 18px/1 var(--sans); padding: 18px; border: 0; }
@@ -199,7 +199,9 @@
 @media (max-width: 420px) { .menu-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .menu-btn { padding: 11px 12px; } .brand img { width: 104px; } .lang-btn { padding: 10px 10px; } }
 
 /* ——— Box newsletter ——— */
-.nl-box { background: var(--navy); color: #fff; border-top: 4px solid var(--red); }
+.nl-box { background: var(--navy); color: #fff; border-top: 4px solid var(--red); scroll-margin-top: 80px; }
+.nl-past { margin: 16px 0 0; font: 500 14px/1.4 var(--sans); }
+.nl-past a { color: #fff; }
 .nl-box .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 64px); align-items: center; padding-top: clamp(40px, 5vw, 64px); padding-bottom: clamp(40px, 5vw, 64px); }
 .nl-box h2 { color: #fff; font-size: clamp(26px, 3vw, 36px); }
 .nl-copy p:not(.kicker) { color: rgba(255, 255, 255, .8); margin: 12px 0 0; max-width: 52ch; }

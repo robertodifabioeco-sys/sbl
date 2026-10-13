@@ -102,7 +102,7 @@
     },
     {
      "t": "Newsletter",
-     "d": "Ogni settimana una selezione di notizie economiche e politiche, direttamente nella tua casella email."
+     "d": "The Friedman Letter, la nostra newsletter gratuita: economia, politica e i nuovi articoli dell'associazione nella tua casella email."
     },
     {
      "t": "Social",
@@ -185,7 +185,7 @@
    "compass_gate_title": "Ecco fatto. Dove ti mandiamo il risultato?",
    "compass_gate_text": "Lascia la tua email per vedere il risultato.",
    "compass_email": "La tua email",
-   "compass_newsletter": "Voglio ricevere anche la newsletter SBL (facoltativo, ti puoi cancellare quando vuoi).",
+   "compass_newsletter": "Voglio ricevere anche The Friedman Letter, la nostra newsletter (facoltativa, ti puoi cancellare quando vuoi). L'iscrizione si conferma su Substack, in una nuova scheda.",
    "compass_privacy": "Ho letto l'informativa privacy",
    "compass_privacy_link": "informativa privacy",
    "compass_submit": "Mostra il risultato",
@@ -210,10 +210,13 @@
    "books_title": "I libri da cui abbiamo imparato",
    "books_text": "Otto classici che passano di mano in mano in associazione. Dietro ognuno c'è uno dei pensatori che leggiamo più spesso.",
    "books_more": "Scopri i pensatori",
-   "nl_title": "La newsletter di SBL",
-   "nl_text": "Una mail a settimana con le notizie economiche e politiche che contano, i nuovi articoli e i prossimi incontri. Ti puoi cancellare quando vuoi.",
+   "nl_title": "The Friedman Letter",
+   "nl_text": "La newsletter della Milton Friedman Society: mercato, libertà individuale e l'economia che sta dietro le notizie. È gratuita e ti puoi cancellare quando vuoi.",
    "nl_cta": "Iscriviti",
-   "nl_ok": "Ci siamo quasi: ti abbiamo mandato una mail, clicca il link per confermare l'iscrizione."
+   "nl_ok": "Si è aperta una scheda di Substack: conferma l'iscrizione da lì e dalla mail che ti arriva.",
+   "nl_past": "Leggi i numeri usciti",
+   "nl_newtab": "si apre in una nuova scheda",
+   "nav_newsletter": "Newsletter"
   },
   "en": {
    "site_name": "Studenti Bocconiani Liberali",
@@ -255,7 +258,7 @@
     },
     {
      "t": "Newsletter",
-     "d": "A weekly selection of economic and political news, straight to your inbox."
+     "d": "The Friedman Letter, our free newsletter: economics, politics and the association's new articles in your inbox."
     },
     {
      "t": "Social media",
@@ -338,7 +341,7 @@
    "compass_gate_title": "Done. Where should we send your result?",
    "compass_gate_text": "Enter your email to see your result.",
    "compass_email": "Your email",
-   "compass_newsletter": "I'd also like the SBL newsletter (optional, unsubscribe any time).",
+   "compass_newsletter": "I'd also like The Friedman Letter, our newsletter (optional, unsubscribe any time). You confirm the subscription on Substack, in a new tab.",
    "compass_privacy": "I have read the privacy notice",
    "compass_privacy_link": "privacy notice",
    "compass_submit": "Show my result",
@@ -363,10 +366,13 @@
    "books_title": "The books we learned from",
    "books_text": "Eight classics that get passed around the association. Behind each one is a thinker we read again and again.",
    "books_more": "Meet the thinkers",
-   "nl_title": "The SBL newsletter",
-   "nl_text": "One email a week with the economic and political news that matters, our new articles and upcoming talks. Unsubscribe any time.",
+   "nl_title": "The Friedman Letter",
+   "nl_text": "The Milton Friedman Society newsletter: free markets, individual liberty and the economics behind the news. It's free and you can unsubscribe any time.",
    "nl_cta": "Subscribe",
-   "nl_ok": "Almost there: we've sent you an email, click the link to confirm your subscription."
+   "nl_ok": "A Substack tab has opened: confirm your subscription there and in the email you'll receive.",
+   "nl_past": "Read past issues",
+   "nl_newtab": "opens in a new tab",
+   "nav_newsletter": "Newsletter"
   }
  },
  "compass_form": {
@@ -381,11 +387,9 @@
   }
  },
  "newsletter_form": {
-  "action": "",
-  "email": "EMAIL",
-  "extra": {
-   "email_address_check": "",
-   "locale": "it"
-  }
+  "action": "https://miltonfriedmansociety.substack.com/api/v1/free",
+  "email": "email",
+  "url": "https://miltonfriedmansociety.substack.com",
+  "extra": {}
  }
 }

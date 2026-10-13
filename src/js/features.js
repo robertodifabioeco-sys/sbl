@@ -57,15 +57,13 @@
   window.SBL_NL = nlEl ? JSON.parse(nlEl.textContent) : null;
   document.querySelectorAll("[data-nl]").forEach(function (fm) {
     fm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var msg = fm.querySelector(".nl-msg"), email = fm.email.value.trim();
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = msg.dataset.err; return; }
-      if (!fm.privacy.checked) { msg.textContent = msg.dataset.priv; return; }
-      var N = window.SBL_NL, fd = new FormData();
-      Object.keys(N.extra || {}).forEach(function (k) { fd.append(k, k === "locale" ? N.lang : N.extra[k]); });
-      fd.append(N.email, email);
-      try { fetch(N.action, { method: "POST", mode: "no-cors", body: fd }); } catch (err) {}
-      fm.reset(); msg.textContent = msg.dataset.ok; msg.classList.add("ok");
+      var msg = fm.querySelector(".nl-msg"), field = fm.elements[window.SBL_NL.email], email = field.value.trim();
+      msg.classList.remove("ok");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { e.preventDefault(); msg.textContent = msg.dataset.err; return; }
+      if (!fm.privacy.checked) { e.preventDefault(); msg.textContent = msg.dataset.priv; return; }
+      field.value = email;
+      // invio vero in una nuova scheda: Substack mostra la sua conferma
+      setTimeout(function () { fm.reset(); msg.textContent = msg.dataset.ok; msg.classList.add("ok"); }, 0);
     });
   });
 
@@ -158,10 +156,16 @@
     }
     var N = window.SBL_NL;
     if (nl && N && N.action) {
+      // form vero in una nuova scheda, come il box newsletter
+      var f = document.createElement("form");
+      f.method = "post"; f.action = N.action; f.target = "_blank"; f.hidden = true;
       fields = Object.assign({}, N.extra || {});
       if ("locale" in fields) fields.locale = N.lang;
       fields[N.email] = email;
-      post(N.action, fields);
+      Object.keys(fields).forEach(function (k) {
+        var i = document.createElement("input"); i.type = "hidden"; i.name = k; i.value = fields[k]; f.appendChild(i);
+      });
+      document.body.appendChild(f); f.submit(); f.remove();
     }
   }
 
