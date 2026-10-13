@@ -1,0 +1,21 @@
+{% if site.newsletter_form and site.newsletter_form.action %}
+<section class="nl-box">
+  <div class="wrap">
+    <div class="nl-copy">
+      <p class="kicker light">Newsletter</p>
+      <h2>{{ t.nl_title }}</h2>
+      <p>{{ t.nl_text }}</p>
+    </div>
+    <form class="nl-form" data-nl novalidate>
+      <label class="sr" for="nl-email">{{ t.compass_email }}</label>
+      <div class="nl-row">
+        <input id="nl-email" type="email" name="email" placeholder="{{ t.compass_email }}" autocomplete="email" required>
+        <button class="btn btn-red" type="submit">{{ t.nl_cta }}</button>
+      </div>
+      <label class="nl-check"><input type="checkbox" name="privacy" required> <span>{{ t.compass_privacy.replace(t.compass_privacy_link, '') }}<a href="/{{ paths.privacy[lang] }}">{{ t.compass_privacy_link }}</a></span></label>
+      <p class="nl-msg" role="status" aria-live="polite" data-ok="{{ t.nl_ok }}" data-err="{{ t.compass_email_err }}" data-priv="{{ t.compass_privacy_err }}"></p>
+    </form>
+  </div>
+</section>
+<script type="application/json" id="nl-config">{{ {"action": site.newsletter_form.action, "email": site.newsletter_form.email or "EMAIL", "extra": site.newsletter_form.extra or {}, "lang": lang}|tojson }}</script>
+{% endif %}

@@ -209,7 +209,11 @@
    "books_kicker": "Le nostre letture",
    "books_title": "I libri da cui abbiamo imparato",
    "books_text": "Otto classici che passano di mano in mano in associazione. Dietro ognuno c'è uno dei pensatori che leggiamo più spesso.",
-   "books_more": "Scopri i pensatori"
+   "books_more": "Scopri i pensatori",
+   "nl_title": "La newsletter di SBL",
+   "nl_text": "Una mail a settimana con le notizie economiche e politiche che contano, i nuovi articoli e i prossimi incontri. Ti puoi cancellare quando vuoi.",
+   "nl_cta": "Iscriviti",
+   "nl_ok": "Ci siamo quasi: ti abbiamo mandato una mail, clicca il link per confermare l'iscrizione."
   },
   "en": {
    "site_name": "Studenti Bocconiani Liberali",
@@ -358,14 +362,30 @@
    "books_kicker": "Our reading list",
    "books_title": "The books we learned from",
    "books_text": "Eight classics that get passed around the association. Behind each one is a thinker we read again and again.",
-   "books_more": "Meet the thinkers"
+   "books_more": "Meet the thinkers",
+   "nl_title": "The SBL newsletter",
+   "nl_text": "One email a week with the economic and political news that matters, our new articles and upcoming talks. Unsubscribe any time.",
+   "nl_cta": "Subscribe",
+   "nl_ok": "Almost there: we've sent you an email, click the link to confirm your subscription."
   }
  },
  "compass_form": {
   "action": "",
-  "email": "",
-  "newsletter": "",
-  "result": "",
-  "lang": ""
+  "email": "EMAIL",
+  "result": "BUSSOLA",
+  "lang": "LINGUA",
+  "newsletter": "NEWSLETTER",
+  "extra": {
+   "email_address_check": "",
+   "locale": "it"
+  }
+ },
+ "newsletter_form": {
+  "action": "",
+  "email": "EMAIL",
+  "extra": {
+   "email_address_check": "",
+   "locale": "it"
+  }
  }
 }

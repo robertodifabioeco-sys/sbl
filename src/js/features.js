@@ -52,6 +52,23 @@
   var rt;
   window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(fillGrids, 150); });
 
+  // ——— Box newsletter ———
+  var nlEl = document.getElementById("nl-config");
+  window.SBL_NL = nlEl ? JSON.parse(nlEl.textContent) : null;
+  document.querySelectorAll("[data-nl]").forEach(function (fm) {
+    fm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var msg = fm.querySelector(".nl-msg"), email = fm.email.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = msg.dataset.err; return; }
+      if (!fm.privacy.checked) { msg.textContent = msg.dataset.priv; return; }
+      var N = window.SBL_NL, fd = new FormData();
+      Object.keys(N.extra || {}).forEach(function (k) { fd.append(k, k === "locale" ? N.lang : N.extra[k]); });
+      fd.append(N.email, email);
+      try { fetch(N.action, { method: "POST", mode: "no-cors", body: fd }); } catch (err) {}
+      fm.reset(); msg.textContent = msg.dataset.ok; msg.classList.add("ok");
+    });
+  });
+
   // ——— Bussola politica ———
   var root = document.getElementById("compass");
   var dataEl = document.getElementById("compass-data");
@@ -123,15 +140,29 @@
     show("result");
   });
 
-  function send(email, nl, profile) {
-    var F = D.form;
-    if (!F || !F.action) return;
+  function post(action, fields) {
     var fd = new FormData();
-    fd.append(F.email, email);
-    fd.append(F.newsletter, nl ? "Si" : "No");
-    fd.append(F.result, profile + " (economia " + score.x + ", diritti " + score.y + ")");
-    if (F.lang) fd.append(F.lang, D.lang);
-    try { fetch(F.action, { method: "POST", mode: "no-cors", body: fd }); } catch (err) {}
+    Object.keys(fields).forEach(function (k) { fd.append(k, fields[k]); });
+    try { fetch(action, { method: "POST", mode: "no-cors", body: fd }); } catch (err) {}
+  }
+  function send(email, nl, profile) {
+    var F = D.form, fields;
+    if (F && F.action) {
+      fields = Object.assign({}, F.extra || {});
+      if ("locale" in fields) fields.locale = D.lang;
+      fields[F.email] = email;
+      if (F.result) fields[F.result] = profile + " (economia " + score.x + ", diritti " + score.y + ")";
+      if (F.lang) fields[F.lang] = D.lang;
+      if (F.newsletter) fields[F.newsletter] = nl ? "SI" : "NO";
+      post(F.action, fields);
+    }
+    var N = window.SBL_NL;
+    if (nl && N && N.action) {
+      fields = Object.assign({}, N.extra || {});
+      if ("locale" in fields) fields.locale = N.lang;
+      fields[N.email] = email;
+      post(N.action, fields);
+    }
   }
 
   function renderResult(P) {

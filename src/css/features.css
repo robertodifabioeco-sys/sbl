@@ -197,3 +197,19 @@
 @media (max-width: 760px) { .photo-strip { grid-template-columns: 1fr 1fr; } }
 
 @media (max-width: 420px) { .menu-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .menu-btn { padding: 11px 12px; } .brand img { width: 104px; } .lang-btn { padding: 10px 10px; } }
+
+/* ——— Box newsletter ——— */
+.nl-box { background: var(--navy); color: #fff; border-top: 4px solid var(--red); }
+.nl-box .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 64px); align-items: center; padding-top: clamp(40px, 5vw, 64px); padding-bottom: clamp(40px, 5vw, 64px); }
+.nl-box h2 { color: #fff; font-size: clamp(26px, 3vw, 36px); }
+.nl-copy p:not(.kicker) { color: rgba(255, 255, 255, .8); margin: 12px 0 0; max-width: 52ch; }
+.nl-row { display: flex; gap: 8px; }
+.nl-row input { flex: 1; min-width: 0; padding: 15px 16px; border: 1.5px solid rgba(255, 255, 255, .3); background: rgba(255, 255, 255, .08); color: #fff; font: 400 16px/1.2 var(--sans); border-radius: 0; }
+.nl-row input::placeholder { color: rgba(255, 255, 255, .55); }
+.nl-row input:focus { outline: none; border-color: #fff; }
+.nl-check { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font: 400 14px/1.45 var(--sans); color: rgba(255, 255, 255, .8); }
+.nl-check input { accent-color: var(--red); margin-top: 2px; }
+.nl-check a { color: #fff; }
+.nl-msg { min-height: 1.4em; margin: 12px 0 0; font: 500 14px/1.4 var(--sans); color: #ffb4b4; }
+.nl-msg.ok { color: #b9f0c9; }
+@media (max-width: 800px) { .nl-box .wrap { grid-template-columns: 1fr; } .nl-row { flex-direction: column; } }
