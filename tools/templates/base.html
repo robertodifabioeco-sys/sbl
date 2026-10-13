@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <script>document.documentElement.className="js";try{var p=localStorage.getItem("sbl-lang"),r=document.referrer,a={% raw %}{{% endraw %}"it":"{{ root }}{{ alternates.it }}","en":"{{ root }}{{ alternates.en }}"{% raw %}}{% endraw %};if(p&&p!=="{{ lang }}"&&a[p]&&!(r&&r.indexOf(location.host)>-1))location.replace(a[p]);}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://*.sibforms.com https://docs.google.com; form-action 'self' https://*.sibforms.com https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc }}">
 <link rel="canonical" href="{{ abs(path) }}">
