@@ -185,7 +185,7 @@
    "compass_gate_title": "Ecco fatto. Dove ti mandiamo il risultato?",
    "compass_gate_text": "Lascia la tua email per vedere il risultato.",
    "compass_email": "La tua email",
-   "compass_newsletter": "Voglio ricevere anche The Friedman Letter, la nostra newsletter (facoltativa, ti puoi cancellare quando vuoi). L'iscrizione si conferma su Substack, in una nuova scheda.",
+   "compass_newsletter": "Voglio ricevere anche The Friedman Letter, la nostra newsletter (facoltativa, ti puoi cancellare quando vuoi).",
    "compass_privacy": "Ho letto l'informativa privacy",
    "compass_privacy_link": "informativa privacy",
    "compass_submit": "Mostra il risultato",
@@ -213,10 +213,12 @@
    "nl_title": "The Friedman Letter",
    "nl_text": "La newsletter della Milton Friedman Society: mercato, libertà individuale e l'economia che sta dietro le notizie. È gratuita e ti puoi cancellare quando vuoi.",
    "nl_cta": "Iscriviti",
-   "nl_ok": "Si è aperta una scheda di Substack: conferma l'iscrizione da lì e dalla mail che ti arriva.",
+   "nl_ok": "Fatto! Ti abbiamo mandato una mail: clicca il link per confermare l'iscrizione.",
    "nl_past": "Leggi i numeri usciti",
-   "nl_newtab": "si apre in una nuova scheda",
-   "nav_newsletter": "Newsletter"
+   "nav_newsletter": "Newsletter",
+   "ck_text": "Questo sito non usa cookie di profilazione né di statistica: ricorda solo la lingua che scegli. Se ti iscrivi alla newsletter, il tuo indirizzo email va a Substack.",
+   "ck_ok": "Accetta",
+   "ck_more": "Privacy"
   },
   "en": {
    "site_name": "Studenti Bocconiani Liberali",
@@ -341,7 +343,7 @@
    "compass_gate_title": "Done. Where should we send your result?",
    "compass_gate_text": "Enter your email to see your result.",
    "compass_email": "Your email",
-   "compass_newsletter": "I'd also like The Friedman Letter, our newsletter (optional, unsubscribe any time). You confirm the subscription on Substack, in a new tab.",
+   "compass_newsletter": "I'd also like The Friedman Letter, our newsletter (optional, unsubscribe any time).",
    "compass_privacy": "I have read the privacy notice",
    "compass_privacy_link": "privacy notice",
    "compass_submit": "Show my result",
@@ -369,10 +371,12 @@
    "nl_title": "The Friedman Letter",
    "nl_text": "The Milton Friedman Society newsletter: free markets, individual liberty and the economics behind the news. It's free and you can unsubscribe any time.",
    "nl_cta": "Subscribe",
-   "nl_ok": "A Substack tab has opened: confirm your subscription there and in the email you'll receive.",
+   "nl_ok": "Done! We've sent you an email: click the link to confirm your subscription.",
    "nl_past": "Read past issues",
-   "nl_newtab": "opens in a new tab",
-   "nav_newsletter": "Newsletter"
+   "nav_newsletter": "Newsletter",
+   "ck_text": "This site uses no profiling or analytics cookies: it only remembers the language you choose. If you subscribe to the newsletter, your email address goes to Substack.",
+   "ck_ok": "Accept",
+   "ck_more": "Privacy"
   }
  },
  "compass_form": {

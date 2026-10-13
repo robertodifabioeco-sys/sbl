@@ -52,18 +52,43 @@
   var rt;
   window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(fillGrids, 150); });
 
+  // ——— Banner cookie: compare alla prima visita, sparisce dopo "Accetta" ———
+  var ck = document.getElementById("ck-bar");
+  if (ck) {
+    var seen = null;
+    try { seen = localStorage.getItem("sbl-ck"); } catch (e) {}
+    if (!seen) ck.hidden = false;
+    document.getElementById("ck-ok").addEventListener("click", function () {
+      try { localStorage.setItem("sbl-ck", "1"); } catch (e) {}
+      ck.hidden = true;
+    });
+  }
+
   // ——— Box newsletter ———
   var nlEl = document.getElementById("nl-config");
   window.SBL_NL = nlEl ? JSON.parse(nlEl.textContent) : null;
+  // iscrizione diretta a Substack: resta sul sito, Substack manda la mail di conferma
+  window.sblSubscribe = function (email) {
+    var N = window.SBL_NL;
+    if (!N || !N.action) return;
+    var body = new URLSearchParams();
+    Object.keys(N.extra || {}).forEach(function (k) { body.append(k, N.extra[k]); });
+    body.append(N.email, email);
+    body.append("first_url", location.href);
+    body.append("current_url", location.href);
+    body.append("source", "embed");
+    var url = N.action + (N.action.indexOf("?") > -1 ? "&" : "?") + "nojs=true";
+    try { fetch(url, { method: "POST", mode: "no-cors", body: body, keepalive: true }); } catch (err) {}
+  };
   document.querySelectorAll("[data-nl]").forEach(function (fm) {
     fm.addEventListener("submit", function (e) {
       var msg = fm.querySelector(".nl-msg"), field = fm.elements[window.SBL_NL.email], email = field.value.trim();
       msg.classList.remove("ok");
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { e.preventDefault(); msg.textContent = msg.dataset.err; return; }
       if (!fm.privacy.checked) { e.preventDefault(); msg.textContent = msg.dataset.priv; return; }
-      field.value = email;
-      // invio vero in una nuova scheda: Substack mostra la sua conferma
-      setTimeout(function () { fm.reset(); msg.textContent = msg.dataset.ok; msg.classList.add("ok"); }, 0);
+      e.preventDefault();
+      window.sblSubscribe(email);
+      fm.reset(); msg.textContent = msg.dataset.ok; msg.classList.add("ok");
     });
   });
 
@@ -154,19 +179,7 @@
       if (F.newsletter) fields[F.newsletter] = nl ? "SI" : "NO";
       post(F.action, fields);
     }
-    var N = window.SBL_NL;
-    if (nl && N && N.action) {
-      // form vero in una nuova scheda, come il box newsletter
-      var f = document.createElement("form");
-      f.method = "post"; f.action = N.action; f.target = "_blank"; f.hidden = true;
-      fields = Object.assign({}, N.extra || {});
-      if ("locale" in fields) fields.locale = N.lang;
-      fields[N.email] = email;
-      Object.keys(fields).forEach(function (k) {
-        var i = document.createElement("input"); i.type = "hidden"; i.name = k; i.value = fields[k]; f.appendChild(i);
-      });
-      document.body.appendChild(f); f.submit(); f.remove();
-    }
+    if (nl && window.sblSubscribe) window.sblSubscribe(email);
   }
 
   function renderResult(P) {

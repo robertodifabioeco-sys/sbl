@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <script>document.documentElement.className="js";try{var p=localStorage.getItem("sbl-lang"),r=document.referrer,a={% raw %}{{% endraw %}"it":"{{ root }}{{ alternates.it }}","en":"{{ root }}{{ alternates.en }}"{% raw %}}{% endraw %};if(p&&p!=="{{ lang }}"&&a[p]&&!(r&&r.indexOf(location.host)>-1))location.replace(a[p]);}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://*.sibforms.com https://docs.google.com; form-action 'self' https://*.sibforms.com https://docs.google.com https://miltonfriedmansociety.substack.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://miltonfriedmansociety.substack.com; form-action 'self' https://*.sibforms.com https://docs.google.com https://miltonfriedmansociety.substack.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc }}">
@@ -95,6 +95,10 @@
     <p>{{ t.footer_disclaimer }}</p>
   </div>
 </footer>
+<div class="ck-bar" id="ck-bar" role="region" aria-label="Cookie" hidden>
+  <p>{{ t.ck_text }} <a href="/{{ paths.privacy[lang] }}">{{ t.ck_more }}</a></p>
+  <button type="button" class="btn btn-red" id="ck-ok">{{ t.ck_ok }}</button>
+</div>
 <script src="/js/main.js?v={{ version }}" defer></script>
 <script src="/js/features.js?v={{ version }}" defer></script>
 </body>
